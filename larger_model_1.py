@@ -9,21 +9,22 @@ y = np.array([3.0, 6.0, 9.0, 12.0, 15.0, 18.0, 21.0, 24.0])
 
 X = tf.constant(X, shape=(8, 1))
 Y=tf.constant(y)
-print(X.shape)
 
 # steps in modelling with tensor
 
 tf.random.set_seed(42)
 
 model = tf.keras.Sequential([
+    tf.keras.layers.Dense(100,activation='relu'),
     tf.keras.layers.Dense(1)
 ]
 )
+
 
 model.compile(loss=tf.keras.losses.MeanAbsoluteError,
               optimizer=tf.keras.optimizers.SGD(),
               metrics=['mae'])
 
-model.fit(X,Y,epochs=5)
+model.fit(X,Y,epochs=100)
 
 print(model.predict(np.array([[17.0]])))

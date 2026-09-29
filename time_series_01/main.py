@@ -1,65 +1,138 @@
-
-import pandas as pd
+# %%
+import tensorflow as tf
 import matplotlib.pyplot as plt
+import pandas as pd
+import numpy as np
 
-df = pd.read_csv(
-	'C:/Interview Process/python_tf/time_series_01/BTC_USD_2013-10-01_2021-05-18-CoinDesk.csv',
-	index_col='Date',
-	parse_dates=['Date']
+data=pd.read_csv('C:/Interview Process/python_tf/time_series_01/jena_climate_2009_2016.csv')
+
+df= data[5::6]
+# print(df)
+
+df.index = pd.to_datetime(df['Date Time'], format='%d.%m.%Y %H:%M:%S')
+temp = df['T (degC)']
+# print(df[25:])
+# %%
+def df_to_X_y(df, window_size=5):
+  df_as_np = df.to_numpy()
+  X = []
+  y = []
+  for i in range(len(df_as_np)-window_size):
+    row = [[a] for a in df_as_np[i:i+window_size]]
+    X.append(row)
+    label = df_as_np[i+window_size]
+    y.append(label)
+  return np.array(X), np.array(y)
+
+WINDOW_SIZE = 5
+
+# %%
+X,y =df_to_X_y(temp,WINDOW_SIZE)
+
+X.shape , y.shape
+
+
+X_train,y_train = X[:60000],y[:60000]
+X_val,y_val = X[60000:65000],y[60000:65000]
+X_test,y_test = X[65000:],y[65000:]
+print(X_train[0],y[0])
+
+model = tf.keras.Sequential([
+  tf.keras.Input(shape=(WINDOW_SIZE, 1)),
+  tf.keras.layers.LSTM(50, return_sequences=True),
+  tf.keras.layers.LSTM(40),
+  tf.keras.layers.Dense(1)
+])
+model.compile(loss=tf.keras.losses.MeanSquaredError(),
+              optimizer=tf.keras.optimizers.Adam(),
+              metrics=[tf.keras.metrics.MeanAbsoluteError(name='mae')])
+
+history = model.fit(
+  X_train,
+  y_train,
+  validation_data=(X_val, y_val),
+  epochs=15
 )
+# %%
+y_pred = model.predict(X_val).ravel()
 
-# print(df.head())
-timesteps = df.index.to_numpy()
-price =df['Closing Price (USD)'].to_numpy()
+train_results = pd.DataFrame(data={'train predictions':y_pred,'Actual':y_val})
 
-# print(timesteps[:5],price[:5])
+print(train_results)
 
-# Plot from CSV
-# import matplotlib.pyplot as plt
-# import numpy as np
-# plt.figure(figsize=(10, 7))
-# plt.plot(date, price)
-# plt.title("Price of Bitcoin from 1 Oct 2013 to 18 May 2021", fontsize=16)
-# plt.xlabel("Date")
-# plt.ylabel("BTC Price");
-# plt.show()
+# Multivariate Time Series
 
-#  wright way to split time series
-split_size = int(.8 * (len(price)))
-x_train,y_train = timesteps[:split_size],price[:split_size]
-x_test,y_test = timesteps[split_size:],price[split_size:]
+# %%
+model2 = tf.keras.Sequential([
+  tf.keras.Input(shape=(WINDOW_SIZE, 1)),
+  tf.keras.layers.Conv1D(64, kernel_size=2),
+  tf.keras.layers.LSTM(8),
+  tf.keras.layers.Dense(1)
+])
+model2.compile(loss=tf.keras.losses.MeanSquaredError(),
+              optimizer=tf.keras.optimizers.Adam(),
+              metrics=[tf.keras.metrics.MeanAbsoluteError(name='mae')])
 
-print(len(x_train))
-
-
-def plot_time_series(timesteps, values, format='-', start=0, label=None):
-	plt.plot(timesteps[start:], values[start:], format, label=label)
-
-
-naive_forecast = y_test[:-1] # Naïve forecast equals every value excluding the last value
-# print(naive_forecast)
-naive_forecast[:10], naive_forecast[-10:] # View frist 10 and last 10 
-
-# Plot naive forecast
-offset = 300
-plt.figure(figsize=(10, 7))
-plot_time_series(
-	timesteps=x_test,
-	values=y_test,
-	start=offset,
-	label='Test data'
+model2.summary()
+# %%
+history2 = model2.fit(
+  X_train,
+  y_train,
+  validation_data=(X_val, y_val),
+  epochs=15
 )
-plot_time_series(
-	timesteps=x_test[1:],
-	values=naive_forecast,
-	format='-',
-	start=offset,
-	label='Naive forecast'
+# %%
+model3 = tf.keras.Sequential([
+  tf.keras.Input(shape=(WINDOW_SIZE, 1)),
+  tf.keras.layers.GRU(64, return_sequences=True),
+  tf.keras.layers.LSTM(8),
+  tf.keras.layers.Dense(8,activation='relu'),
+  tf.keras.layers.Dense(1,activation='linear')
+])
+model3.compile(loss=tf.keras.losses.MeanSquaredError(),
+              optimizer=tf.keras.optimizers.Adam(),
+              metrics=[tf.keras.metrics.MeanAbsoluteError(name='mae')])
+model3.summary()
+
+history3 = model3.fit(
+  X_train,
+  y_train,
+  validation_data=(X_val, y_val),
+  epochs=15
 )
-plt.title('Bitcoin price: test data and naive forecast')
-plt.xlabel('Date')
-plt.ylabel('Closing price (USD)')
-plt.legend()
-plt.grid(True, alpha=0.3)
-plt.tight_layout()
-plt.show()
+# %%
+temp_df=pd.DataFrame({'tempature':temp})
+temp_df['Seconds']=temp_df.index.map(pd.Timestamp.timestamp)
+
+day = 60*60*24
+year = 365.2425*day
+
+temp_df['Day sin'] = np.sin(temp_df['Seconds'] * (2* np.pi / day))
+temp_df['Day cos'] = np.cos(temp_df['Seconds'] * (2 * np.pi / day))
+temp_df['Year sin'] = np.sin(temp_df['Seconds'] * (2 * np.pi / year))
+temp_df['Year cos'] = np.cos(temp_df['Seconds'] * (2 * np.pi / year))
+temp_df.head()
+# %%
+temp_df = temp_df.drop('Seconds', axis=1)
+temp_df.head()
+# %%
+def df_to_X_y2(df,window_size=6):
+    df_as_np = df.to_numpy()
+    X=[]
+    y = []
+    for i in range(len(df_as_np)-window_size):
+        row = [r for r in df_as_np[i:i+window_size]]
+        X.append(row)
+        label = df_as_np[i+window_size][0]
+        y.append(label)
+    return np.array(X),np.array(y)
+X2,y2 = df_to_X_y(temp_df)
+# %%
+X2.shape,y2.shape
+X2[0],y2[0]
+
+# %%
+X2_train, y2_train = X2[:60000], y2[:60000]
+X2_val, y2_val = X2[60000:65000], y2[60000:65000]
+X2_test, y2_test = X2[65000:], y2[65000:]
+X2_train.shape, y2_train.shape, X2_val.shape, y2_val.shape, X2_test.shape, y2_test.shape

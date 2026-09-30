@@ -1,138 +1,88 @@
+# inspect the data
+# %%
+import os
+import random
+from pathlib import Path
+import numpy as np
+from PIL import Image
+import matplotlib.pyplot as plt
+
+# %%
+#  list number of files
+for dirpath, dirnames, filenames in os.walk("pizza_steak"):
+  print(f"There are {len(dirnames)} directories and {len(filenames)} images in '{dirpath}'.")
+
+
+def get_random_image(directory, class_name):
+  class_directory = Path(directory) / class_name
+  if not class_directory.is_dir():
+    raise FileNotFoundError(f"Class directory not found: {class_directory}")
+
+  image_extensions = {'.jpg', '.jpeg', '.png', '.bmp', '.gif', '.webp'}
+  image_paths = [
+    path for path in class_directory.iterdir()
+    if path.is_file() and path.suffix.lower() in image_extensions
+  ]
+  if not image_paths:
+    raise FileNotFoundError(f"No image files found in: {class_directory}")
+
+  with Image.open(random.choice(image_paths)) as image:
+    image = image.copy()
+
+  plt.imshow(image)
+  plt.title(class_name)
+  plt.axis('off')
+  plt.show()
+  return image
+# %%
+img = get_random_image('C:/Interview Process/python_tf/pizza_steak/test', 'steak')
+image = np.array(img, dtype=np.float32) / 255.0
 # %%
 import tensorflow as tf
-import matplotlib.pyplot as plt
-import pandas as pd
-import numpy as np
 
-data=pd.read_csv('C:/Interview Process/python_tf/time_series_01/jena_climate_2009_2016.csv')
-
-df= data[5::6]
-# print(df)
-
-df.index = pd.to_datetime(df['Date Time'], format='%d.%m.%Y %H:%M:%S')
-temp = df['T (degC)']
-# print(df[25:])
-# %%
-def df_to_X_y(df, window_size=5):
-  df_as_np = df.to_numpy()
-  X = []
-  y = []
-  for i in range(len(df_as_np)-window_size):
-    row = [[a] for a in df_as_np[i:i+window_size]]
-    X.append(row)
-    label = df_as_np[i+window_size]
-    y.append(label)
-  return np.array(X), np.array(y)
-
-WINDOW_SIZE = 5
+tf.constant(image)
 
 # %%
-X,y =df_to_X_y(temp,WINDOW_SIZE)
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
 
-X.shape , y.shape
+tf.random.set_seed(42)
+train_datagen = ImageDataGenerator(rescale=1./255)
+valid_datagen = ImageDataGenerator(rescale = 1./255)
 
+#  Import data from directories and turn into batches
+train_dir = 'C:/Interview Process/python_tf/pizza_steak/train'
+test_dir = 'C:/Interview Process/python_tf/pizza_steak/test'
 
-X_train,y_train = X[:60000],y[:60000]
-X_val,y_val = X[60000:65000],y[60000:65000]
-X_test,y_test = X[65000:],y[65000:]
-print(X_train[0],y[0])
+train_data = train_datagen.flow_from_directory(directory=train_dir,
+                                               batch_size=32,
+                                               target_size=(224,224),
+                                               class_mode='binary',
+                                               seed=42)
+valid_data = valid_datagen.flow_from_directory(directory=test_dir,
+                                               batch_size=32,
+                                               target_size=(224,224),
+                                               class_mode='binary',
+                                               seed=42)
 
-model = tf.keras.Sequential([
-  tf.keras.Input(shape=(WINDOW_SIZE, 1)),
-  tf.keras.layers.LSTM(50, return_sequences=True),
-  tf.keras.layers.LSTM(40),
-  tf.keras.layers.Dense(1)
+model_1 = tf.keras.models.Sequential([
+    tf.keras.layers.Conv2D(filters=10,
+                          kernel_size=3,
+                          activation='relu',
+                          input_shape=(224,224,3)),
+    tf.keras.layers.Conv2D(10,3,activation='relu'),
+    tf.keras.layers.MaxPool2D(pool_size=2,
+                              padding='valid'),
+    tf.keras.layers.Conv2D(10,3,activation='relu'),
+    tf.keras.layers.MaxPool2D(2),
+    tf.keras.layers.Flatten(),
+    tf.keras.layers.Dense(1,activation='sigmoid')
 ])
-model.compile(loss=tf.keras.losses.MeanSquaredError(),
-              optimizer=tf.keras.optimizers.Adam(),
-              metrics=[tf.keras.metrics.MeanAbsoluteError(name='mae')])
 
-history = model.fit(
-  X_train,
-  y_train,
-  validation_data=(X_val, y_val),
-  epochs=15
-)
+#  compile our CNN
+model_1.compile(loss='binary_crossentropy',
+                optimizer=tf.keras.optimizers.Adam(),
+                metrics=['accuracy'])
+# 04ms/step - accuracy: 1.0000 - loss: 1.2797e-08 - val_accuracy: 0.5000 - val_loss: 20.4517
+
+model_1.fit(train_data,epochs=5,steps_per_epoch=len(train_data),validation_data=valid_data,validation_steps=len(valid_data))
 # %%
-y_pred = model.predict(X_val).ravel()
-
-train_results = pd.DataFrame(data={'train predictions':y_pred,'Actual':y_val})
-
-print(train_results)
-
-# Multivariate Time Series
-
-# %%
-model2 = tf.keras.Sequential([
-  tf.keras.Input(shape=(WINDOW_SIZE, 1)),
-  tf.keras.layers.Conv1D(64, kernel_size=2),
-  tf.keras.layers.LSTM(8),
-  tf.keras.layers.Dense(1)
-])
-model2.compile(loss=tf.keras.losses.MeanSquaredError(),
-              optimizer=tf.keras.optimizers.Adam(),
-              metrics=[tf.keras.metrics.MeanAbsoluteError(name='mae')])
-
-model2.summary()
-# %%
-history2 = model2.fit(
-  X_train,
-  y_train,
-  validation_data=(X_val, y_val),
-  epochs=15
-)
-# %%
-model3 = tf.keras.Sequential([
-  tf.keras.Input(shape=(WINDOW_SIZE, 1)),
-  tf.keras.layers.GRU(64, return_sequences=True),
-  tf.keras.layers.LSTM(8),
-  tf.keras.layers.Dense(8,activation='relu'),
-  tf.keras.layers.Dense(1,activation='linear')
-])
-model3.compile(loss=tf.keras.losses.MeanSquaredError(),
-              optimizer=tf.keras.optimizers.Adam(),
-              metrics=[tf.keras.metrics.MeanAbsoluteError(name='mae')])
-model3.summary()
-
-history3 = model3.fit(
-  X_train,
-  y_train,
-  validation_data=(X_val, y_val),
-  epochs=15
-)
-# %%
-temp_df=pd.DataFrame({'tempature':temp})
-temp_df['Seconds']=temp_df.index.map(pd.Timestamp.timestamp)
-
-day = 60*60*24
-year = 365.2425*day
-
-temp_df['Day sin'] = np.sin(temp_df['Seconds'] * (2* np.pi / day))
-temp_df['Day cos'] = np.cos(temp_df['Seconds'] * (2 * np.pi / day))
-temp_df['Year sin'] = np.sin(temp_df['Seconds'] * (2 * np.pi / year))
-temp_df['Year cos'] = np.cos(temp_df['Seconds'] * (2 * np.pi / year))
-temp_df.head()
-# %%
-temp_df = temp_df.drop('Seconds', axis=1)
-temp_df.head()
-# %%
-def df_to_X_y2(df,window_size=6):
-    df_as_np = df.to_numpy()
-    X=[]
-    y = []
-    for i in range(len(df_as_np)-window_size):
-        row = [r for r in df_as_np[i:i+window_size]]
-        X.append(row)
-        label = df_as_np[i+window_size][0]
-        y.append(label)
-    return np.array(X),np.array(y)
-X2,y2 = df_to_X_y(temp_df)
-# %%
-X2.shape,y2.shape
-X2[0],y2[0]
-
-# %%
-X2_train, y2_train = X2[:60000], y2[:60000]
-X2_val, y2_val = X2[60000:65000], y2[60000:65000]
-X2_test, y2_test = X2[65000:], y2[65000:]
-X2_train.shape, y2_train.shape, X2_val.shape, y2_val.shape, X2_test.shape, y2_test.shape

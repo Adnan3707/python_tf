@@ -1,0 +1,1 @@
+.\venv\Scripts\tensorboard.exe --logdir .\TransferLearning\tensorflow_hub --port 6006

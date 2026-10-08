@@ -1,0 +1,74 @@
+import pandas as pd
+import numpy as np
+from sklearn.mixture import GaussianMixture
+from sklearn.neighbors import LocalOutlierFactor
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import silhouette_score
+import matplotlib.pyplot as plt
+from sklearn.decomposition import PCA
+
+# Load and preprocess the dataset
+df = pd.read_csv('/content/Fraud Detection Insurance Non Cluster v2.csv')
+customer_ids = df['customer_id']
+df = df.drop(columns=['customer_id'])
+
+# Scale the data
+scaler = StandardScaler()
+df_scaled = scaler.fit_transform(df)
+
+# 1. GMM-Only Approach
+gmm = GaussianMixture(n_components=3, random_state=42)
+gmm_labels = gmm.fit_predict(df_scaled)
+
+# Silhouette Score to assess cluster quality
+gmm_silhouette = silhouette_score(df_scaled, gmm_labels)
+print(f"GMM Silhouette Score: {gmm_silhouette:.2f}")
+
+# 2. LOF-Only Approach
+lof = LocalOutlierFactor(n_neighbors=20, contamination=0.01)
+lof_labels = lof.fit_predict(df_scaled)
+lof_anomalies = lof_labels == -1
+print(f"LOF-Only Anomalies Detected: {np.sum(lof_anomalies)}")
+
+# 3. Hybrid Approach
+df['cluster'] = gmm_labels
+df['anomaly'] = 0
+
+for cluster_id in df['cluster'].unique():
+    cluster_data = df[df['cluster'] == cluster_id]
+    cluster_data_scaled = scaler.fit_transform(cluster_data.drop(columns=['cluster']))
+    lof = LocalOutlierFactor(n_neighbors=20, contamination=0.05)
+    cluster_anomalies = lof.fit_predict(cluster_data_scaled)
+    df.loc[cluster_data.index, 'anomaly'] = (cluster_anomalies == -1).astype(int)
+
+hybrid_anomalies = df['anomaly'] == 1
+print(f"Hybrid Approach Anomalies Detected: {np.sum(hybrid_anomalies)}")
+
+# 4. Visualize the Results with PCA
+pca = PCA(n_components=2)
+df_pca = pca.fit_transform(df_scaled)
+plt.figure(figsize=(12, 6))
+
+# GMM Clusters Visualization
+plt.subplot(1, 2, 1)
+plt.scatter(df_pca[:, 0], df_pca[:, 1], c=gmm_labels, cmap='viridis', s=50)
+plt.title("GMM Clusters")
+plt.xlabel("PCA Component 1")
+plt.ylabel("PCA Component 2")
+
+# Hybrid Approach Anomalies Visualization
+plt.subplot(1, 2, 2)
+plt.scatter(df_pca[:, 0], df_pca[:, 1], c=hybrid_anomalies, cmap='coolwarm', s=50)
+plt.title("Hybrid Approach Anomalies")
+plt.xlabel("PCA Component 1")
+plt.ylabel("PCA Component 2")
+
+plt.show()
+
+# Compare the overlap of anomalies
+lof_anomaly_set = set(np.where(lof_anomalies)[0])
+hybrid_anomaly_set = set(np.where(hybrid_anomalies)[0])
+
+# Jaccard Similarity
+jaccard_similarity = len(lof_anomaly_set & hybrid_anomaly_set) / len(lof_anomaly_set | hybrid_anomaly_set)
+print(f"Jaccard Similarity between LOF-Only and Hybrid Approach Anomalies: {jaccard_similarity:.2f}")

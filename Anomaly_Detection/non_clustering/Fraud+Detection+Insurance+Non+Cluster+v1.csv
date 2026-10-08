@@ -1,0 +1,823 @@
+customer_id,months_as_customer,age,policy_annual_premium,umbrella_limit,insured_sex,insured_education_level,insured_occupation,insured_hobbies,insured_relationship,capital-gains,capital-loss,incident_type,collision_type,incident_severity,authorities_contacted,incident_hour_of_the_day,number_of_vehicles_involved,bodily_injuries,witnesses,total_claim_amount,auto_make
+10001,328,48,1406.91,0,MALE,MD,craft-repair,sleeping,husband,53300,0,Single Vehicle Collision,Side Collision,Major Damage,Police,5,1,1,2,71610,Saab
+10003,134,29,1413.14,5000000,FEMALE,PhD,sales,board-games,own-child,35100,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,7,3,2,3,34650,Dodge
+10004,256,41,1415.74,6000000,FEMALE,PhD,armed-forces,board-games,unmarried,48900,-62400,Single Vehicle Collision,Front Collision,Major Damage,Police,5,1,1,2,63400,Chevrolet
+10006,256,39,1351.1,0,FEMALE,PhD,tech-support,bungie-jumping,unmarried,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,19,3,0,2,64100,Saab
+10007,137,34,1333.35,0,MALE,PhD,prof-specialty,board-games,husband,0,-77000,Multi-vehicle Collision,Front Collision,Minor Damage,Police,0,3,0,0,78650,Nissan
+10008,165,37,1137.03,0,MALE,Associate,tech-support,base-jumping,unmarried,0,0,Multi-vehicle Collision,Front Collision,Total Loss,Police,23,3,2,2,51590,Audi
+10009,27,33,1442.99,0,FEMALE,PhD,other-service,golf,own-child,0,0,Single Vehicle Collision,Front Collision,Total Loss,Police,21,1,1,1,27700,Toyota
+10010,212,42,1315.68,0,MALE,PhD,priv-house-serv,camping,wife,0,-39300,Single Vehicle Collision,Rear Collision,Total Loss,Other,14,1,2,1,42300,Saab
+10011,235,42,1253.12,4000000,FEMALE,Masters,exec-managerial,dancing,other-relative,38400,0,Single Vehicle Collision,Front Collision,Total Loss,Police,22,1,2,2,87010,Ford
+10012,447,61,1137.16,0,FEMALE,High School,exec-managerial,skydiving,other-relative,0,-51000,Multi-vehicle Collision,Front Collision,Major Damage,Fire,21,3,1,2,114920,Audi
+10013,60,23,1215.36,3000000,MALE,MD,protective-serv,reading,wife,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,9,1,1,0,56520,Saab
+10015,180,38,1301.13,0,FEMALE,College,machine-op-inspct,board-games,not-in-family,41300,-55500,Single Vehicle Collision,Rear Collision,Total Loss,Police,12,1,0,2,46200,Dodge
+10016,473,58,1131.4,0,FEMALE,MD,transport-moving,movies,other-relative,55700,0,Multi-vehicle Collision,Side Collision,Major Damage,Other,12,4,0,0,63120,Accura
+10017,70,26,1199.44,5000000,MALE,College,machine-op-inspct,hiking,own-child,63600,0,Multi-vehicle Collision,Rear Collision,Major Damage,Other,0,3,1,2,52110,Nissan
+10018,140,31,708.64,6000000,MALE,High School,machine-op-inspct,reading,unmarried,53500,0,Single Vehicle Collision,Side Collision,Total Loss,Police,9,1,0,2,77880,Suburu
+10019,160,37,1374.22,0,FEMALE,MD,craft-repair,yachting,other-relative,45500,-37800,Single Vehicle Collision,Side Collision,Total Loss,Other,19,1,1,0,72930,Accura
+10020,196,39,1475.73,0,FEMALE,High School,handlers-cleaners,camping,own-child,57000,-27300,Multi-vehicle Collision,Side Collision,Major Damage,Police,8,3,2,0,60400,Nissan
+10021,460,62,1187.96,4000000,MALE,JD,other-service,bungie-jumping,own-child,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,20,3,1,0,47160,Suburu
+10022,217,41,875.15,0,FEMALE,Associate,machine-op-inspct,skydiving,own-child,46700,0,Multi-vehicle Collision,Side Collision,Total Loss,Police,15,3,1,2,37840,Accura
+10023,370,55,972.18,0,MALE,High School,prof-specialty,paintball,other-relative,72700,-68200,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,20,3,0,0,71520,Suburu
+10024,413,55,1268.79,0,MALE,MD,priv-house-serv,chess,own-child,0,-31000,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,15,1,2,2,98160,Dodge
+10025,237,40,883.31,0,MALE,College,craft-repair,kayaking,husband,0,-53500,Single Vehicle Collision,Rear Collision,Minor Damage,Other,6,1,1,3,77880,Ford
+10026,8,35,1266.92,0,MALE,Masters,sales,polo,own-child,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Other,16,3,1,3,71500,Ford
+10029,224,40,1291.7,0,FEMALE,JD,sales,kayaking,not-in-family,0,-55600,Single Vehicle Collision,Side Collision,Minor Damage,Other,21,1,1,0,69840,Dodge
+10030,241,45,1104.5,0,FEMALE,PhD,machine-op-inspct,basketball,unmarried,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Police,5,1,2,2,91650,Accura
+10031,64,25,954.16,0,MALE,Masters,prof-specialty,video-games,husband,53200,0,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,22,4,0,0,75600,Toyota
+10032,166,37,1337.28,8000000,MALE,JD,craft-repair,reading,husband,27500,0,Multi-vehicle Collision,Side Collision,Major Damage,Police,10,3,2,2,67140,Ford
+10033,155,35,1088.34,0,FEMALE,Associate,adm-clerical,yachting,other-relative,81100,0,Multi-vehicle Collision,Front Collision,Total Loss,Police,16,3,2,3,29790,BMW
+10034,114,30,1558.29,0,MALE,High School,farming-fishing,video-games,wife,51400,-64000,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,1,3,1,2,77110,Suburu
+10035,149,37,1415.68,0,MALE,PhD,prof-specialty,yachting,own-child,0,0,Single Vehicle Collision,Side Collision,Total Loss,Fire,17,1,0,1,64800,Audi
+10036,147,33,1334.15,6000000,MALE,High School,craft-repair,reading,not-in-family,53300,-49200,Single Vehicle Collision,Front Collision,Major Damage,Other,15,1,2,0,53100,Mercedes
+10037,62,28,988.45,0,FEMALE,Masters,protective-serv,camping,unmarried,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Police,3,1,1,1,60200,Suburu
+10039,431,54,1155.55,0,FEMALE,MD,craft-repair,bungie-jumping,unmarried,65700,0,Multi-vehicle Collision,Rear Collision,Major Damage,Police,4,3,2,0,62300,Jeep
+10040,199,37,1262.08,0,MALE,JD,tech-support,video-games,wife,48500,0,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,4,1,0,3,60170,Nissan
+10041,79,26,1451.62,0,MALE,Associate,tech-support,kayaking,not-in-family,0,-55700,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,19,1,2,2,40000,BMW
+10042,116,34,1737.66,0,MALE,Associate,transport-moving,chess,unmarried,0,-24100,Single Vehicle Collision,Side Collision,Major Damage,Police,1,1,1,1,97080,BMW
+10043,37,23,1475.93,0,FEMALE,College,prof-specialty,hiking,husband,0,-67400,Multi-vehicle Collision,Side Collision,Minor Damage,Other,17,3,1,0,51660,Dodge
+10044,106,30,538.17,0,FEMALE,PhD,transport-moving,reading,own-child,49700,-60200,Single Vehicle Collision,Rear Collision,Total Loss,Other,23,1,2,2,51120,Mercedes
+10045,269,44,1081.08,0,MALE,JD,priv-house-serv,reading,unmarried,36400,-28700,Single Vehicle Collision,Front Collision,Minor Damage,Other,14,1,0,2,56400,Toyota
+10046,265,40,1454.43,0,FEMALE,MD,protective-serv,yachting,husband,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Other,17,3,2,3,55120,Accura
+10047,163,33,1240.47,0,FEMALE,Associate,other-service,polo,husband,35300,0,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,11,3,1,1,77110,Honda
+10048,355,47,1273.7,4000000,MALE,College,other-service,kayaking,husband,0,0,Multi-vehicle Collision,Front Collision,Major Damage,Fire,19,3,2,1,62800,Audi
+10050,192,35,1245.89,0,FEMALE,Masters,exec-managerial,movies,wife,0,-40300,Single Vehicle Collision,Rear Collision,Total Loss,Other,19,1,0,0,76600,Mercedes
+10051,430,59,1326.62,7000000,MALE,MD,other-service,bungie-jumping,own-child,0,0,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,19,3,0,3,81800,Nissan
+10054,223,40,1201.41,0,FEMALE,JD,priv-house-serv,movies,husband,88400,-46500,Multi-vehicle Collision,Side Collision,Major Damage,Police,7,3,1,0,70510,Suburu
+10056,22,26,1276.57,0,MALE,PhD,craft-repair,skydiving,not-in-family,71500,0,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,3,1,1,2,78900,Chevrolet
+10057,439,56,1082.49,0,FEMALE,PhD,prof-specialty,chess,unmarried,36100,-55000,Multi-vehicle Collision,Front Collision,Major Damage,Fire,12,3,2,3,56430,Honda
+10059,11,39,1470.06,0,MALE,PhD,other-service,yachting,husband,56600,-45800,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,22,1,0,1,65790,Saab
+10060,151,36,870.63,0,FEMALE,MD,adm-clerical,kayaking,own-child,94800,-58500,Multi-vehicle Collision,Side Collision,Minor Damage,Police,12,3,1,1,62920,Ford
+10061,154,34,795.23,0,MALE,PhD,machine-op-inspct,base-jumping,other-relative,36900,0,Multi-vehicle Collision,Rear Collision,Major Damage,Police,15,3,2,1,69480,Nissan
+10062,245,44,1168.2,0,MALE,JD,handlers-cleaners,basketball,husband,69100,0,Multi-vehicle Collision,Side Collision,Total Loss,Other,23,3,0,3,44280,Honda
+10063,119,32,993.51,0,MALE,High School,armed-forces,bungie-jumping,unmarried,0,-49500,Single Vehicle Collision,Side Collision,Minor Damage,Other,12,1,0,3,56300,BMW
+10064,215,42,1848.81,0,MALE,JD,transport-moving,video-games,own-child,0,-49000,Multi-vehicle Collision,Front Collision,Major Damage,Fire,20,3,2,2,68520,Suburu
+10065,295,42,1641.73,5000000,MALE,PhD,sales,chess,not-in-family,62400,0,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,16,3,0,0,59130,Ford
+10066,254,39,1362.87,0,FEMALE,MD,exec-managerial,chess,other-relative,35700,0,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,6,3,2,2,82320,Dodge
+10067,107,31,1239.22,7000000,FEMALE,High School,tech-support,paintball,not-in-family,43400,-91200,Single Vehicle Collision,Side Collision,Minor Damage,Fire,12,1,0,1,89700,Audi
+10068,478,64,835.02,0,FEMALE,Associate,adm-clerical,reading,unmarried,59600,0,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,17,3,1,1,33930,BMW
+10069,128,30,1061.33,0,MALE,MD,machine-op-inspct,movies,own-child,43300,-66200,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,8,1,0,3,68530,Audi
+10071,271,42,1105.49,0,FEMALE,Associate,prof-specialty,sleeping,own-child,56200,-50000,Multi-vehicle Collision,Side Collision,Major Damage,Other,12,2,2,3,68310,Audi
+10072,222,41,1055.53,0,FEMALE,MD,armed-forces,cross-fit,not-in-family,37800,-50300,Single Vehicle Collision,Front Collision,Total Loss,Other,7,1,0,2,61290,Honda
+10073,199,41,895.83,0,FEMALE,Associate,sales,paintball,husband,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,10,1,1,2,30100,Chevrolet
+10074,215,37,1632.93,0,FEMALE,College,transport-moving,golf,not-in-family,0,-42900,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,7,3,2,0,57120,Mercedes
+10075,192,40,1405.99,0,FEMALE,Associate,sales,yachting,wife,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,18,3,1,0,42930,BMW
+10076,120,35,1425.54,0,FEMALE,High School,transport-moving,bungie-jumping,other-relative,78300,0,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,22,3,2,0,51210,Ford
+10077,270,45,1038.09,0,FEMALE,College,handlers-cleaners,golf,husband,0,-19700,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,18,3,1,1,89400,Suburu
+10078,319,47,1307.11,0,MALE,College,transport-moving,dancing,not-in-family,0,0,Multi-vehicle Collision,Front Collision,Total Loss,Police,22,3,0,2,59730,Audi
+10080,227,38,976.67,0,FEMALE,PhD,handlers-cleaners,polo,unmarried,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Fire,16,1,1,2,72200,BMW
+10081,137,31,1340.43,0,MALE,High School,exec-managerial,paintball,husband,52700,-40600,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,6,3,1,2,50800,Accura
+10085,284,48,769.95,0,MALE,Masters,prof-specialty,movies,not-in-family,0,-44200,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,16,2,2,3,60940,Audi
+10086,275,41,1514.72,0,MALE,High School,transport-moving,board-games,own-child,35700,0,Multi-vehicle Collision,Front Collision,Major Damage,Fire,13,3,0,1,58300,Suburu
+10087,153,34,873.64,4000000,FEMALE,Associate,priv-house-serv,yachting,husband,800,0,Multi-vehicle Collision,Front Collision,Minor Damage,Other,9,3,2,1,68400,Ford
+10088,134,32,1612.43,0,FEMALE,MD,other-service,yachting,own-child,36400,0,Single Vehicle Collision,Side Collision,Total Loss,Fire,2,1,2,1,64240,BMW
+10090,41,25,1226.83,0,FEMALE,College,exec-managerial,exercise,not-in-family,0,-56100,Multi-vehicle Collision,Side Collision,Major Damage,Other,12,3,2,0,45120,Accura
+10091,127,29,1326.44,5000000,FEMALE,High School,sales,board-games,own-child,0,0,Multi-vehicle Collision,Front Collision,Total Loss,Fire,12,2,1,1,66950,Saab
+10092,61,23,1136.83,4000000,FEMALE,Associate,tech-support,exercise,own-child,0,-62400,Single Vehicle Collision,Side Collision,Major Damage,Police,14,1,0,3,98340,Honda
+10094,219,43,1483.25,0,FEMALE,MD,exec-managerial,exercise,not-in-family,90700,-20800,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,3,3,1,1,70680,Ford
+10095,271,42,1515.3,0,FEMALE,High School,machine-op-inspct,hiking,not-in-family,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,21,3,1,0,93720,Mercedes
+10097,325,47,1690.27,0,FEMALE,Associate,protective-serv,hiking,not-in-family,61500,0,Single Vehicle Collision,Side Collision,Major Damage,Fire,11,1,0,3,72930,Dodge
+10098,29,25,1352.83,0,MALE,Masters,farming-fishing,skydiving,own-child,0,-71700,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,4,4,1,2,64890,Nissan
+10101,269,41,1463.82,0,FEMALE,College,protective-serv,yachting,not-in-family,0,-72300,Single Vehicle Collision,Rear Collision,Minor Damage,Police,23,1,0,0,79300,Saab
+10102,80,27,1474.17,0,FEMALE,College,tech-support,exercise,unmarried,0,0,Single Vehicle Collision,Side Collision,Major Damage,Police,13,1,1,0,52800,Saab
+10103,279,41,1497.35,0,FEMALE,JD,prof-specialty,bungie-jumping,husband,37300,-31700,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,16,3,2,3,28800,Ford
+10105,350,54,1495.1,0,MALE,College,other-service,basketball,wife,50500,0,Multi-vehicle Collision,Side Collision,Total Loss,Police,15,3,0,0,93480,Chevrolet
+10107,464,61,1125.37,0,FEMALE,Associate,prof-specialty,basketball,husband,0,-56400,Multi-vehicle Collision,Rear Collision,Major Damage,Police,6,3,0,2,79800,Saab
+10108,118,28,1207.36,0,FEMALE,High School,handlers-cleaners,camping,own-child,0,-57000,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,22,2,1,0,74200,Volkswagen
+10109,298,47,1338.5,0,FEMALE,PhD,machine-op-inspct,basketball,other-relative,28800,0,Single Vehicle Collision,Front Collision,Major Damage,Fire,1,1,0,0,70590,Saab
+10110,87,31,1074.07,0,FEMALE,Masters,sales,chess,husband,0,-47500,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,16,3,0,3,60940,Nissan
+10111,261,42,1337.56,0,FEMALE,College,prof-specialty,video-games,unmarried,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Police,18,1,1,2,74700,Dodge
+10112,453,60,1298.91,6000000,MALE,PhD,craft-repair,dancing,unmarried,52600,-38800,Single Vehicle Collision,Front Collision,Major Damage,Fire,0,1,0,0,70000,Ford
+10113,210,41,1222.75,0,MALE,High School,exec-managerial,polo,other-relative,0,-41000,Multi-vehicle Collision,Rear Collision,Total Loss,Other,12,3,2,0,81070,BMW
+10114,168,32,1059.52,0,MALE,MD,protective-serv,camping,own-child,0,-40600,Multi-vehicle Collision,Side Collision,Major Damage,Other,13,2,1,1,57720,Saab
+10116,258,46,1110.37,10000000,MALE,MD,machine-op-inspct,hiking,other-relative,34400,-56800,Multi-vehicle Collision,Side Collision,Total Loss,Other,14,3,0,1,47700,Accura
+10117,107,31,1374.22,0,FEMALE,PhD,machine-op-inspct,bungie-jumping,other-relative,62000,-63100,Single Vehicle Collision,Rear Collision,Minor Damage,Police,16,1,0,3,51260,Suburu
+10118,225,41,1103.58,0,MALE,High School,exec-managerial,exercise,unmarried,41200,-36200,Multi-vehicle Collision,Side Collision,Major Damage,Police,20,3,2,2,70400,Toyota
+10119,164,38,1269.76,0,FEMALE,PhD,transport-moving,yachting,not-in-family,44300,0,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,4,1,1,3,90000,Ford
+10120,245,39,964.79,8000000,FEMALE,Associate,adm-clerical,camping,husband,58000,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,7,3,0,1,72820,BMW
+10121,255,41,1167.3,4000000,MALE,High School,priv-house-serv,board-games,other-relative,0,0,Single Vehicle Collision,Side Collision,Minor Damage,Fire,22,1,2,0,69300,Volkswagen
+10122,206,36,1625.45,4000000,FEMALE,MD,other-service,video-games,other-relative,0,-53700,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,11,1,2,1,76560,Ford
+10123,203,38,1394.43,0,FEMALE,Masters,other-service,skydiving,not-in-family,0,0,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,7,1,0,1,55440,Nissan
+10124,22,25,1053.24,0,FEMALE,College,prof-specialty,movies,other-relative,51100,0,Multi-vehicle Collision,Front Collision,Total Loss,Other,0,4,1,0,77130,Accura
+10125,211,35,1040.75,0,FEMALE,JD,prof-specialty,paintball,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,1,1,1,1,42000,BMW
+10126,206,39,1302.4,6000000,MALE,JD,craft-repair,dancing,unmarried,47200,-69700,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,12,3,2,3,36300,Ford
+10127,166,38,1588.55,0,MALE,MD,protective-serv,video-games,unmarried,59600,-32100,Single Vehicle Collision,Side Collision,Total Loss,Other,8,1,0,0,40320,Suburu
+10129,274,43,1352.31,0,MALE,College,farming-fishing,basketball,wife,40700,-47300,Single Vehicle Collision,Front Collision,Major Damage,Fire,22,1,0,3,63840,BMW
+10130,81,28,1139,6000000,FEMALE,Masters,sales,sleeping,husband,42400,0,Multi-vehicle Collision,Front Collision,Major Damage,Fire,0,3,1,2,44730,Saab
+10131,280,45,1397.67,0,MALE,JD,machine-op-inspct,camping,wife,57900,0,Multi-vehicle Collision,Front Collision,Minor Damage,Other,0,3,1,2,84720,Ford
+10132,194,39,823.17,0,MALE,Masters,adm-clerical,paintball,own-child,0,0,Multi-vehicle Collision,Front Collision,Major Damage,Other,3,3,2,2,61500,Dodge
+10133,112,27,965.13,0,FEMALE,Masters,tech-support,exercise,unmarried,60000,-54800,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,21,3,0,1,51000,Nissan
+10134,24,33,1922.84,0,FEMALE,High School,machine-op-inspct,skydiving,wife,0,-45200,Single Vehicle Collision,Side Collision,Total Loss,Police,0,1,2,1,46800,Jeep
+10135,93,32,1624.82,0,MALE,PhD,exec-managerial,basketball,unmarried,65300,-65600,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,16,1,1,1,78120,BMW
+10136,171,34,1277.25,0,FEMALE,College,exec-managerial,yachting,other-relative,84900,0,Single Vehicle Collision,Rear Collision,Major Damage,Police,14,1,1,2,69200,Volkswagen
+10138,120,28,1281.27,0,FEMALE,PhD,tech-support,golf,not-in-family,68900,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,9,3,0,3,65500,BMW
+10139,325,46,1348.83,0,FEMALE,High School,prof-specialty,basketball,wife,46300,-77500,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,21,3,1,2,76120,Toyota
+10140,124,32,1198.15,0,FEMALE,MD,other-service,hiking,not-in-family,0,-43200,Multi-vehicle Collision,Front Collision,Total Loss,Other,19,3,0,2,73560,BMW
+10141,211,35,1221.22,0,MALE,Masters,machine-op-inspct,camping,other-relative,76000,0,Single Vehicle Collision,Rear Collision,Total Loss,Police,2,1,0,1,52030,Mercedes
+10144,22,29,1238.62,6000000,MALE,MD,exec-managerial,yachting,other-relative,0,-56200,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,14,1,2,3,70800,Accura
+10145,106,31,1320.75,0,FEMALE,JD,farming-fishing,video-games,wife,54100,0,Multi-vehicle Collision,Rear Collision,Total Loss,Police,20,3,0,3,45630,Accura
+10146,398,58,990.98,0,FEMALE,Associate,exec-managerial,cross-fit,wife,0,-57900,Single Vehicle Collision,Front Collision,Major Damage,Police,18,1,2,1,99320,Accura
+10147,214,41,1398.51,4000000,MALE,Masters,tech-support,polo,not-in-family,0,-57100,Multi-vehicle Collision,Side Collision,Major Damage,Fire,13,3,2,0,64000,BMW
+10148,209,38,1355.08,0,FEMALE,MD,other-service,golf,other-relative,58100,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,21,1,1,1,47300,Nissan
+10149,82,27,1384.51,0,MALE,PhD,adm-clerical,reading,not-in-family,13100,-38200,Single Vehicle Collision,Rear Collision,Major Damage,Other,14,1,2,3,71680,Volkswagen
+10150,193,41,847.03,0,FEMALE,JD,craft-repair,skydiving,not-in-family,0,0,Single Vehicle Collision,Side Collision,Major Damage,Other,1,1,1,0,112320,Suburu
+10151,134,32,1000.06,0,FEMALE,PhD,farming-fishing,base-jumping,wife,0,0,Single Vehicle Collision,Side Collision,Total Loss,Other,17,1,1,0,82720,Audi
+10152,288,45,1046.71,0,MALE,Masters,priv-house-serv,polo,husband,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,4,3,2,1,48060,Mercedes
+10153,104,32,1158.03,0,MALE,High School,exec-managerial,kayaking,own-child,31900,-44600,Multi-vehicle Collision,Rear Collision,Total Loss,Police,23,3,1,3,63570,Volkswagen
+10154,431,54,1372.27,0,FEMALE,Masters,craft-repair,paintball,own-child,17600,0,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,13,3,2,3,63240,Suburu
+10155,101,33,1053.04,7000000,FEMALE,Masters,other-service,reading,own-child,52000,-44500,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,20,3,1,3,54240,Saab
+10156,375,50,1275.39,0,MALE,Associate,sales,bungie-jumping,other-relative,0,0,Single Vehicle Collision,Front Collision,Major Damage,Police,16,1,2,3,37280,Audi
+10157,461,61,1402.75,0,MALE,JD,exec-managerial,exercise,husband,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,10,3,2,1,72100,Jeep
+10159,45,38,1197.71,0,MALE,Masters,machine-op-inspct,movies,not-in-family,29000,0,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,17,3,2,0,78240,Suburu
+10162,278,48,1142.62,7000000,FEMALE,MD,farming-fishing,dancing,not-in-family,0,-54000,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,12,1,2,0,76050,Chevrolet
+10163,295,48,1332.07,0,FEMALE,MD,exec-managerial,polo,unmarried,49700,-59100,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,20,2,2,1,86060,Volkswagen
+10164,112,30,1166.54,0,FEMALE,Masters,prof-specialty,sleeping,not-in-family,47700,-59300,Single Vehicle Collision,Front Collision,Major Damage,Fire,3,1,2,0,107900,Dodge
+10165,122,34,1495.06,0,FEMALE,Masters,prof-specialty,polo,unmarried,38100,-31400,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,18,3,2,0,99990,Mercedes
+10166,108,29,1337.92,0,FEMALE,PhD,armed-forces,bungie-jumping,not-in-family,71400,0,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,4,3,2,2,61380,Suburu
+10167,14,28,1587.96,0,FEMALE,Associate,craft-repair,board-games,unmarried,0,-26900,Single Vehicle Collision,Rear Collision,Major Damage,Fire,18,1,2,1,71280,Audi
+10168,298,45,1362.29,0,MALE,High School,farming-fishing,yachting,unmarried,0,-51100,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,18,3,0,0,64000,Saab
+10171,222,42,1124.6,0,MALE,Associate,armed-forces,hiking,not-in-family,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,23,3,0,0,51740,Jeep
+10172,119,28,1079.92,0,MALE,High School,machine-op-inspct,hiking,husband,88800,0,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,1,1,0,1,53600,Volkswagen
+10173,73,29,1447.78,0,MALE,College,protective-serv,board-games,wife,35100,-59900,Multi-vehicle Collision,Rear Collision,Total Loss,Other,15,3,1,0,44910,Dodge
+10174,8,31,1229.16,4000000,FEMALE,MD,transport-moving,kayaking,wife,0,-88300,Multi-vehicle Collision,Front Collision,Major Damage,Fire,2,3,0,2,48100,Volkswagen
+10176,324,46,897.89,6000000,MALE,MD,tech-support,board-games,wife,0,-41300,Single Vehicle Collision,Rear Collision,Minor Damage,Other,13,1,1,0,79600,Jeep
+10177,155,34,1706.79,0,MALE,Masters,protective-serv,dancing,other-relative,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,1,1,1,1,77040,Honda
+10178,261,45,1254.18,0,FEMALE,PhD,prof-specialty,kayaking,other-relative,0,-45100,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,16,1,0,1,62590,Volkswagen
+10179,245,40,885.08,0,FEMALE,Masters,armed-forces,skydiving,other-relative,27000,-58900,Single Vehicle Collision,Front Collision,Total Loss,Other,0,1,0,1,85150,Chevrolet
+10181,53,36,1712.68,0,MALE,Associate,handlers-cleaners,basketball,not-in-family,72200,0,Multi-vehicle Collision,Side Collision,Major Damage,Fire,17,3,2,0,51100,Audi
+10182,426,54,1097.71,0,FEMALE,Masters,adm-clerical,reading,not-in-family,29600,-22300,Single Vehicle Collision,Side Collision,Minor Damage,Police,13,1,2,3,100800,Dodge
+10183,111,27,1363.77,4000000,FEMALE,Masters,tech-support,exercise,husband,51100,0,Single Vehicle Collision,Side Collision,Total Loss,Police,12,1,2,3,90970,Accura
+10184,86,26,1382.88,7000000,MALE,JD,tech-support,cross-fit,other-relative,0,-30300,Single Vehicle Collision,Rear Collision,Minor Damage,Police,11,1,1,1,81840,Chevrolet
+10185,296,46,1141.35,7000000,MALE,Masters,craft-repair,sleeping,not-in-family,0,0,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,18,1,0,2,54900,Mercedes
+10186,125,35,1054.83,7000000,MALE,JD,tech-support,cross-fit,husband,0,-51300,Single Vehicle Collision,Front Collision,Total Loss,Fire,17,1,2,3,88660,Mercedes
+10187,177,34,1057.77,0,FEMALE,JD,tech-support,bungie-jumping,unmarried,0,-57700,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,22,3,1,1,18000,Audi
+10189,81,25,920.3,5000000,FEMALE,High School,tech-support,hiking,own-child,51000,-67900,Multi-vehicle Collision,Rear Collision,Major Damage,Other,11,3,1,0,73920,Honda
+10190,128,28,986.53,0,FEMALE,High School,adm-clerical,polo,other-relative,62700,0,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,11,1,0,2,101860,Honda
+10192,252,39,1086.21,0,MALE,JD,farming-fishing,hiking,unmarried,68500,-57500,Single Vehicle Collision,Side Collision,Minor Damage,Police,18,1,1,2,50490,Nissan
+10193,359,47,1367.68,0,FEMALE,MD,handlers-cleaners,basketball,unmarried,0,0,Single Vehicle Collision,Front Collision,Total Loss,Police,13,1,0,3,55500,Mercedes
+10195,73,26,1191.19,4000000,MALE,MD,farming-fishing,basketball,not-in-family,29300,0,Multi-vehicle Collision,Rear Collision,Total Loss,Other,9,3,0,1,40160,Chevrolet
+10196,285,44,1594.45,0,MALE,High School,handlers-cleaners,bungie-jumping,husband,0,0,Multi-vehicle Collision,Side Collision,Total Loss,Fire,17,2,2,3,55680,Saab
+10199,328,48,1411.43,0,MALE,Masters,armed-forces,bungie-jumping,own-child,45100,-32800,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,17,1,2,1,59400,Honda
+10202,342,49,1722.95,0,MALE,PhD,transport-moving,base-jumping,not-in-family,63100,-13800,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,3,1,2,0,76700,Suburu
+10204,468,62,1011.92,0,MALE,PhD,machine-op-inspct,paintball,wife,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,7,3,0,3,64350,Chevrolet
+10205,241,39,1042.26,0,MALE,JD,sales,kayaking,husband,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,21,3,1,2,19080,Saab
+10206,223,43,1235.1,0,FEMALE,Masters,tech-support,exercise,not-in-family,66400,-34400,Single Vehicle Collision,Rear Collision,Minor Damage,Police,14,1,2,1,54400,BMW
+10207,128,32,768.91,0,FEMALE,College,sales,chess,other-relative,0,-39300,Single Vehicle Collision,Rear Collision,Total Loss,Fire,0,1,1,0,59800,Ford
+10208,124,29,1301.72,0,MALE,Masters,handlers-cleaners,golf,husband,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Police,14,3,0,3,72000,Audi
+10209,343,48,1451.54,3000000,MALE,JD,adm-clerical,hiking,husband,0,0,Multi-vehicle Collision,Side Collision,Total Loss,Police,13,4,2,3,65070,Mercedes
+10213,335,50,1538.26,6000000,MALE,High School,sales,yachting,other-relative,62200,-31400,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,12,3,2,3,34320,Volkswagen
+10214,11,40,1217.69,0,FEMALE,MD,prof-specialty,reading,wife,24000,0,Multi-vehicle Collision,Side Collision,Major Damage,Other,6,3,1,0,53460,Dodge
+10215,142,33,1362.64,5000000,FEMALE,JD,exec-managerial,cross-fit,wife,0,0,Single Vehicle Collision,Side Collision,Total Loss,Other,11,1,1,3,81360,Suburu
+10216,272,43,1279.13,0,MALE,PhD,craft-repair,bungie-jumping,other-relative,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,5,3,1,2,81070,Audi
+10217,69,26,924.72,0,FEMALE,High School,machine-op-inspct,base-jumping,unmarried,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,14,1,2,2,63120,Audi
+10219,328,46,1314.6,0,FEMALE,MD,prof-specialty,exercise,not-in-family,24800,0,Single Vehicle Collision,Rear Collision,Total Loss,Other,0,1,2,3,70290,Saab
+10220,281,43,1515.18,6000000,MALE,College,priv-house-serv,camping,other-relative,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,21,3,1,0,60190,BMW
+10221,246,44,1649.18,0,MALE,College,farming-fishing,base-jumping,other-relative,0,-58600,Single Vehicle Collision,Front Collision,Major Damage,Other,18,1,1,2,61380,Honda
+10222,298,49,1451.01,0,FEMALE,College,other-service,exercise,own-child,47800,0,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,17,1,2,2,28100,Jeep
+10223,330,50,978.46,0,FEMALE,High School,sales,yachting,husband,0,0,Single Vehicle Collision,Side Collision,Total Loss,Fire,19,1,0,0,49060,Chevrolet
+10224,362,50,1198.34,4000000,MALE,Associate,sales,board-games,wife,53000,-72500,Multi-vehicle Collision,Side Collision,Total Loss,Fire,17,3,1,1,57060,Mercedes
+10225,241,38,1003.23,0,FEMALE,Associate,tech-support,kayaking,not-in-family,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Fire,23,3,0,3,77880,Accura
+10226,245,41,1212,0,MALE,Masters,exec-managerial,basketball,unmarried,24400,-60500,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,4,1,0,1,73500,Jeep
+10227,371,52,1242.96,7000000,FEMALE,High School,other-service,paintball,own-child,0,-37100,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,2,2,2,0,88920,Accura
+10228,343,52,1053.02,0,FEMALE,Associate,prof-specialty,bungie-jumping,not-in-family,0,0,Single Vehicle Collision,Front Collision,Major Damage,Other,2,1,0,2,47630,Toyota
+10229,377,53,1693.63,0,FEMALE,MD,craft-repair,kayaking,unmarried,0,-64000,Multi-vehicle Collision,Front Collision,Total Loss,Fire,10,3,1,3,59040,Saab
+10230,154,37,2047.59,0,FEMALE,MD,farming-fishing,dancing,other-relative,0,-67800,Single Vehicle Collision,Rear Collision,Minor Damage,Other,2,1,0,3,79530,Accura
+10231,166,34,1083.72,0,FEMALE,High School,machine-op-inspct,base-jumping,wife,65600,-68200,Single Vehicle Collision,Side Collision,Total Loss,Other,18,1,0,2,53680,Honda
+10232,298,46,1138.42,6000000,MALE,JD,prof-specialty,dancing,own-child,36900,-55000,Single Vehicle Collision,Side Collision,Minor Damage,Police,18,1,2,3,33550,Volkswagen
+10233,235,42,1072.62,0,FEMALE,Masters,machine-op-inspct,exercise,husband,39900,-60200,Multi-vehicle Collision,Side Collision,Total Loss,Other,7,4,2,1,69100,Toyota
+10234,172,35,1219.04,0,MALE,MD,handlers-cleaners,paintball,own-child,63600,-68700,Multi-vehicle Collision,Rear Collision,Major Damage,Police,19,3,2,0,79750,Nissan
+10235,27,28,1371.78,0,MALE,JD,farming-fishing,polo,other-relative,0,-32500,Multi-vehicle Collision,Front Collision,Major Damage,Other,10,3,0,2,53600,Audi
+10236,428,54,1506.21,0,MALE,Masters,transport-moving,kayaking,unmarried,0,-24400,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,16,3,1,0,76560,Nissan
+10237,99,32,1058.21,3000000,MALE,JD,craft-repair,golf,unmarried,0,0,Single Vehicle Collision,Front Collision,Total Loss,Fire,17,1,1,1,41130,Dodge
+10238,107,26,932.14,0,MALE,MD,sales,cross-fit,own-child,40600,0,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,2,3,2,3,78650,Audi
+10239,272,41,1608.34,0,FEMALE,Associate,farming-fishing,reading,own-child,33300,-10600,Single Vehicle Collision,Side Collision,Major Damage,Other,19,1,1,1,71060,Saab
+10240,151,37,1728.56,0,FEMALE,Masters,farming-fishing,dancing,own-child,54000,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,0,1,1,1,38830,Suburu
+10241,249,43,1518.46,0,FEMALE,MD,armed-forces,cross-fit,own-child,0,0,Single Vehicle Collision,Front Collision,Major Damage,Fire,16,1,0,0,53500,Saab
+10242,177,38,1540.19,0,FEMALE,College,adm-clerical,skydiving,other-relative,0,-74500,Single Vehicle Collision,Front Collision,Major Damage,Other,20,1,2,0,73700,Chevrolet
+10244,174,36,1278.75,0,FEMALE,College,tech-support,paintball,own-child,53200,-53800,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,21,3,2,2,65400,Dodge
+10246,371,51,1532.47,0,FEMALE,Associate,tech-support,golf,other-relative,60300,-24700,Single Vehicle Collision,Rear Collision,Major Damage,Fire,7,1,0,3,75400,Dodge
+10247,2,28,1340.56,0,FEMALE,JD,machine-op-inspct,golf,not-in-family,0,0,Single Vehicle Collision,Side Collision,Minor Damage,Fire,19,1,0,2,58140,Saab
+10248,269,44,1297.75,4000000,FEMALE,JD,other-service,chess,own-child,0,-41400,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,15,3,0,1,98670,Chevrolet
+10250,94,30,1025.54,0,FEMALE,High School,armed-forces,paintball,other-relative,0,-52600,Single Vehicle Collision,Rear Collision,Major Damage,Fire,19,1,1,3,64100,Chevrolet
+10251,117,28,1264.77,0,FEMALE,Associate,transport-moving,yachting,unmarried,47500,-32500,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,13,2,0,1,55440,Suburu
+10252,111,27,1459.97,5000000,MALE,MD,sales,yachting,other-relative,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Police,2,3,1,2,80850,Ford
+10254,440,61,1050.76,0,MALE,PhD,transport-moving,movies,wife,41500,-70200,Single Vehicle Collision,Side Collision,Major Damage,Fire,21,1,2,3,53640,Nissan
+10255,20,23,1711.72,0,FEMALE,JD,tech-support,base-jumping,wife,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,21,3,2,2,63250,Chevrolet
+10256,461,57,865.33,7000000,FEMALE,High School,farming-fishing,golf,own-child,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,7,3,0,1,59040,Dodge
+10257,208,36,1153.49,0,MALE,Associate,craft-repair,base-jumping,other-relative,0,0,Multi-vehicle Collision,Side Collision,Total Loss,Other,16,3,1,0,50500,Accura
+10258,279,43,1281.25,0,MALE,Associate,machine-op-inspct,cross-fit,other-relative,0,0,Single Vehicle Collision,Side Collision,Major Damage,Police,13,1,0,1,57690,Mercedes
+10260,134,30,1443.32,0,FEMALE,PhD,exec-managerial,dancing,unmarried,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,19,3,0,2,47790,Suburu
+10262,156,31,1134.08,0,MALE,PhD,other-service,reading,husband,0,0,Single Vehicle Collision,Front Collision,Major Damage,Police,3,1,2,0,59000,Ford
+10263,232,43,1483.91,8000000,MALE,College,machine-op-inspct,golf,husband,0,-33600,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,17,3,0,1,70600,Volkswagen
+10264,244,40,1304.67,7000000,MALE,Masters,armed-forces,base-jumping,other-relative,0,-45000,Multi-vehicle Collision,Side Collision,Minor Damage,Police,5,3,1,1,61490,Dodge
+10265,84,30,1035.79,0,FEMALE,MD,protective-serv,kayaking,wife,44400,-51500,Single Vehicle Collision,Side Collision,Minor Damage,Police,9,1,1,0,57640,Volkswagen
+10267,246,45,1665.45,0,MALE,JD,machine-op-inspct,hiking,wife,34400,-33100,Multi-vehicle Collision,Side Collision,Major Damage,Fire,9,3,2,2,53280,Toyota
+10268,35,29,653.66,0,FEMALE,JD,handlers-cleaners,video-games,unmarried,52100,-46900,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,22,3,0,0,78300,BMW
+10269,156,37,1080.13,0,MALE,Associate,protective-serv,reading,other-relative,0,-61000,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,15,3,0,3,41490,Nissan
+10270,195,36,1346.18,0,FEMALE,Associate,machine-op-inspct,camping,wife,57800,-53300,Multi-vehicle Collision,Front Collision,Total Loss,Fire,14,3,2,3,68970,Chevrolet
+10271,369,55,1589.54,0,MALE,College,handlers-cleaners,camping,husband,55400,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,6,3,2,0,85300,Toyota
+10273,332,47,1083.01,0,MALE,MD,craft-repair,paintball,other-relative,91900,0,Multi-vehicle Collision,Front Collision,Major Damage,Police,22,4,2,0,71760,Jeep
+10274,107,26,974.59,0,FEMALE,JD,armed-forces,skydiving,wife,62800,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,14,3,1,0,59700,Nissan
+10275,217,39,1399.85,0,FEMALE,Masters,other-service,skydiving,other-relative,49900,-19800,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,16,3,0,2,64920,Ford
+10276,243,43,1307.74,0,FEMALE,Associate,machine-op-inspct,board-games,own-child,0,-75700,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,10,3,0,1,37530,Jeep
+10277,296,42,1219.27,0,MALE,Associate,tech-support,paintball,husband,53100,-63400,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,9,3,1,2,64080,Saab
+10278,264,41,1411.3,0,MALE,PhD,prof-specialty,cross-fit,unmarried,55600,0,Single Vehicle Collision,Rear Collision,Minor Damage,Other,4,1,1,0,60390,BMW
+10279,108,33,694.45,0,FEMALE,JD,armed-forces,exercise,not-in-family,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Police,6,3,0,1,64350,Nissan
+10280,32,38,1006.77,6000000,FEMALE,College,other-service,sleeping,own-child,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Police,15,3,2,1,70900,BMW
+10281,259,39,1422.36,0,FEMALE,JD,craft-repair,movies,unmarried,0,-83900,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,12,3,1,3,46560,Nissan
+10284,436,58,1407.01,5000000,MALE,PhD,tech-support,sleeping,other-relative,47400,-27600,Single Vehicle Collision,Rear Collision,Major Damage,Police,10,1,0,2,59900,BMW
+10285,189,36,1388.58,0,FEMALE,MD,priv-house-serv,basketball,own-child,0,-49400,Multi-vehicle Collision,Side Collision,Major Damage,Police,17,3,1,3,79560,Ford
+10286,105,33,1310.76,0,FEMALE,High School,adm-clerical,kayaking,not-in-family,0,-40900,Single Vehicle Collision,Front Collision,Total Loss,Other,8,1,0,1,70290,Accura
+10287,163,31,1004.63,6000000,MALE,JD,priv-house-serv,hiking,not-in-family,26900,0,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,14,3,2,0,63910,Suburu
+10289,88,25,1194,0,FEMALE,JD,handlers-cleaners,movies,husband,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,6,1,1,2,66780,Ford
+10291,284,42,1338.54,-1000000,MALE,Associate,machine-op-inspct,kayaking,wife,0,0,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,13,1,0,1,94160,Chevrolet
+10292,59,40,782.23,0,MALE,College,protective-serv,golf,other-relative,64200,-32300,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,0,3,0,2,51570,BMW
+10293,39,31,1366.9,0,FEMALE,High School,handlers-cleaners,polo,husband,0,-15700,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,14,3,1,0,52700,BMW
+10294,147,34,1275.81,0,MALE,High School,sales,dancing,wife,0,-48300,Single Vehicle Collision,Side Collision,Minor Damage,Fire,13,1,2,2,101010,Mercedes
+10295,156,37,1090.65,0,MALE,High School,exec-managerial,golf,unmarried,0,-51800,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,16,4,1,2,53400,Honda
+10296,123,31,1326,0,FEMALE,Associate,prof-specialty,basketball,wife,0,-54600,Single Vehicle Collision,Side Collision,Total Loss,Fire,13,1,1,2,72120,Mercedes
+10297,231,43,972.47,0,MALE,College,protective-serv,reading,wife,0,-58100,Multi-vehicle Collision,Front Collision,Minor Damage,Police,15,3,2,2,77100,Audi
+10300,119,27,1097.64,0,MALE,High School,transport-moving,video-games,other-relative,27100,0,Multi-vehicle Collision,Rear Collision,Major Damage,Other,16,2,1,0,63720,Accura
+10302,107,31,1018.73,5000000,MALE,Associate,handlers-cleaners,yachting,own-child,20000,-82700,Multi-vehicle Collision,Side Collision,Total Loss,Police,21,3,1,2,93730,Honda
+10303,48,44,1400.74,0,MALE,College,sales,base-jumping,other-relative,34000,-55600,Multi-vehicle Collision,Rear Collision,Major Damage,Police,23,3,0,2,87300,Jeep
+10305,286,47,1386.93,0,MALE,High School,priv-house-serv,bungie-jumping,husband,54100,-77600,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,15,3,0,0,65800,Accura
+10306,175,34,915.29,0,FEMALE,JD,handlers-cleaners,base-jumping,wife,82400,-57100,Single Vehicle Collision,Front Collision,Major Damage,Other,14,1,2,1,36720,Honda
+10307,111,29,1239.55,2000000,FEMALE,PhD,farming-fishing,kayaking,own-child,0,0,Single Vehicle Collision,Side Collision,Major Damage,Fire,1,1,1,1,52800,Mercedes
+10308,151,37,1366.42,0,FEMALE,Associate,protective-serv,cross-fit,unmarried,44000,0,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,14,3,1,2,59100,Nissan
+10309,156,37,1086.48,6000000,MALE,Associate,machine-op-inspct,hiking,unmarried,0,-53800,Multi-vehicle Collision,Rear Collision,Total Loss,Other,17,3,1,1,77440,Suburu
+10310,165,36,1247.87,0,MALE,Masters,armed-forces,golf,husband,0,-39700,Multi-vehicle Collision,Side Collision,Total Loss,Fire,20,3,2,2,45700,BMW
+10311,253,41,1312.75,0,FEMALE,PhD,sales,dancing,other-relative,81300,0,Multi-vehicle Collision,Rear Collision,Major Damage,Other,10,3,2,2,80740,Toyota
+10312,10,26,765.64,0,MALE,MD,sales,base-jumping,not-in-family,0,-22200,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,3,3,0,3,31350,Honda
+10313,158,33,1327.41,0,FEMALE,Associate,handlers-cleaners,skydiving,other-relative,0,-38600,Single Vehicle Collision,Side Collision,Total Loss,Other,0,1,0,0,35000,Suburu
+10314,436,59,1338.55,0,MALE,PhD,protective-serv,board-games,own-child,39000,0,Multi-vehicle Collision,Side Collision,Total Loss,Police,10,3,2,2,68000,Toyota
+10315,91,30,1316.63,8000000,FEMALE,Masters,machine-op-inspct,golf,unmarried,43900,0,Multi-vehicle Collision,Side Collision,Minor Damage,Other,13,3,2,0,84500,BMW
+10316,256,42,1286.44,0,FEMALE,MD,transport-moving,bungie-jumping,wife,0,-39500,Single Vehicle Collision,Rear Collision,Minor Damage,Police,14,1,2,1,75500,Nissan
+10317,274,46,1372.18,0,MALE,High School,exec-managerial,bungie-jumping,not-in-family,0,0,Multi-vehicle Collision,Side Collision,Total Loss,Other,22,3,1,3,90600,BMW
+10318,275,45,1447.77,0,FEMALE,Associate,adm-clerical,camping,wife,39400,-63900,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,8,3,1,1,64320,Accura
+10319,1,33,903.32,0,FEMALE,High School,transport-moving,yachting,not-in-family,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,1,3,1,0,31700,Toyota
+10320,85,30,1454.42,0,MALE,Associate,protective-serv,reading,other-relative,51600,-73900,Single Vehicle Collision,Side Collision,Major Damage,Other,19,1,0,1,74280,Suburu
+10321,233,37,1603.42,0,FEMALE,High School,sales,video-games,wife,61600,-30200,Single Vehicle Collision,Front Collision,Total Loss,Fire,17,1,0,2,80520,Toyota
+10322,142,30,1616.58,0,MALE,JD,adm-clerical,polo,husband,58500,-46800,Multi-vehicle Collision,Rear Collision,Major Damage,Other,13,3,0,3,63600,Dodge
+10323,266,44,1611.83,0,MALE,High School,handlers-cleaners,movies,husband,0,0,Single Vehicle Collision,Front Collision,Total Loss,Police,4,1,1,2,32800,BMW
+10324,350,50,889.13,0,FEMALE,Masters,priv-house-serv,board-games,other-relative,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Police,14,3,0,2,44190,Audi
+10325,97,26,1252.08,0,MALE,College,exec-managerial,sleeping,not-in-family,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Other,4,2,2,2,50400,Honda
+10326,399,55,995.56,0,MALE,JD,tech-support,sleeping,not-in-family,0,-65400,Multi-vehicle Collision,Side Collision,Total Loss,Police,23,3,1,1,88400,Nissan
+10327,305,49,1347.92,0,FEMALE,High School,farming-fishing,bungie-jumping,own-child,0,-42100,Multi-vehicle Collision,Front Collision,Total Loss,Fire,21,3,0,2,66550,Volkswagen
+10328,276,47,1724.09,0,MALE,PhD,craft-repair,yachting,own-child,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,23,3,0,0,65780,Chevrolet
+10329,257,40,1379.93,0,MALE,MD,armed-forces,base-jumping,husband,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Other,6,3,0,2,51810,Audi
+10330,78,31,1554.64,4000000,MALE,PhD,protective-serv,board-games,own-child,0,-27900,Single Vehicle Collision,Front Collision,Major Damage,Other,21,1,1,0,55660,Honda
+10331,129,28,1377.94,0,MALE,Masters,machine-op-inspct,base-jumping,not-in-family,0,0,Single Vehicle Collision,Side Collision,Major Damage,Fire,23,1,2,3,44640,Toyota
+10332,283,46,1313.33,0,FEMALE,PhD,transport-moving,reading,husband,53500,-73600,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,3,3,1,3,77660,Nissan
+10335,96,30,1399.27,6000000,MALE,College,prof-specialty,hiking,wife,38900,-48700,Single Vehicle Collision,Side Collision,Total Loss,Fire,22,1,0,0,53440,Ford
+10336,121,31,1061.98,6000000,FEMALE,JD,armed-forces,camping,unmarried,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Police,16,1,0,1,65250,BMW
+10337,176,39,1365.46,4000000,MALE,College,armed-forces,sleeping,unmarried,0,-56600,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,14,3,2,1,44280,Chevrolet
+10338,159,37,894.4,0,MALE,Associate,tech-support,camping,wife,0,-53700,Single Vehicle Collision,Rear Collision,Total Loss,Police,13,1,2,0,70290,Dodge
+10339,120,30,956.69,0,FEMALE,Associate,priv-house-serv,movies,husband,39600,-64300,Single Vehicle Collision,Front Collision,Minor Damage,Other,20,1,1,1,87100,Saab
+10340,212,35,1123.89,0,MALE,MD,priv-house-serv,video-games,unmarried,35400,-49200,Multi-vehicle Collision,Front Collision,Total Loss,Fire,0,3,1,3,50380,Suburu
+10341,290,45,1085.03,0,FEMALE,JD,sales,cross-fit,wife,0,-61000,Multi-vehicle Collision,Side Collision,Total Loss,Police,23,3,2,2,64800,Audi
+10342,299,42,1437.33,0,FEMALE,Associate,craft-repair,movies,wife,25000,0,Single Vehicle Collision,Rear Collision,Minor Damage,Other,13,1,1,3,70400,BMW
+10343,66,26,988.29,0,MALE,College,armed-forces,skydiving,own-child,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Police,8,1,2,2,57860,Suburu
+10345,216,38,1384.64,5000000,FEMALE,Associate,tech-support,board-games,unmarried,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Police,16,1,2,3,66600,Jeep
+10346,86,28,1595.07,0,MALE,PhD,transport-moving,hiking,unmarried,75800,0,Single Vehicle Collision,Side Collision,Minor Damage,Police,19,1,0,2,70920,Jeep
+10347,429,56,1127.89,6000000,MALE,Associate,machine-op-inspct,skydiving,own-child,67400,-43800,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,0,1,2,0,39480,Suburu
+10348,257,43,929.7,6000000,FEMALE,PhD,handlers-cleaners,base-jumping,husband,46400,-74300,Single Vehicle Collision,Front Collision,Total Loss,Other,12,1,2,2,63240,Mercedes
+10349,15,34,1829.63,0,MALE,JD,tech-support,cross-fit,not-in-family,56700,0,Multi-vehicle Collision,Side Collision,Total Loss,Other,21,3,1,0,67650,Audi
+10350,230,39,904.7,7000000,FEMALE,MD,craft-repair,bungie-jumping,unmarried,68600,-22300,Single Vehicle Collision,Front Collision,Major Damage,Fire,0,1,1,3,74200,Accura
+10351,250,43,1243.84,0,FEMALE,JD,tech-support,polo,own-child,47900,-73400,Single Vehicle Collision,Side Collision,Minor Damage,Other,22,1,1,3,64900,Volkswagen
+10352,270,44,1030.95,0,FEMALE,Associate,machine-op-inspct,paintball,other-relative,47200,0,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,20,3,1,0,35900,Audi
+10353,65,26,1285.03,3000000,FEMALE,High School,craft-repair,camping,unmarried,0,-41500,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,0,1,1,3,52200,Honda
+10354,475,57,1216.56,0,MALE,Masters,adm-clerical,skydiving,own-child,67400,-83200,Single Vehicle Collision,Front Collision,Minor Damage,Police,20,1,0,2,78000,Suburu
+10355,77,27,966.26,0,FEMALE,High School,adm-clerical,base-jumping,own-child,56400,-32800,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,1,3,0,0,67200,Volkswagen
+10356,256,43,1203.17,0,FEMALE,MD,prof-specialty,golf,unmarried,56700,-65600,Single Vehicle Collision,Rear Collision,Total Loss,Fire,11,1,0,0,63250,Nissan
+10357,229,37,1212.12,0,FEMALE,MD,craft-repair,paintball,not-in-family,65600,0,Multi-vehicle Collision,Side Collision,Major Damage,Other,14,3,1,1,68760,Ford
+10358,110,28,1573.93,0,MALE,College,other-service,movies,other-relative,30400,0,Multi-vehicle Collision,Side Collision,Minor Damage,Police,20,3,0,2,65040,Suburu
+10359,177,33,1609.67,0,MALE,College,adm-clerical,yachting,wife,0,-13200,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,22,1,1,3,82800,Jeep
+10360,292,44,1097.57,0,MALE,PhD,priv-house-serv,basketball,unmarried,0,0,Single Vehicle Collision,Side Collision,Total Loss,Other,12,1,1,0,61700,Saab
+10361,451,61,1618.65,2000000,FEMALE,Associate,transport-moving,polo,unmarried,0,-42600,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,3,3,2,1,78100,Chevrolet
+10362,61,24,922.67,0,FEMALE,College,priv-house-serv,paintball,other-relative,47400,0,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,15,3,2,1,65520,Toyota
+10364,283,41,1195.01,0,FEMALE,Associate,sales,reading,own-child,60700,-54300,Multi-vehicle Collision,Side Collision,Major Damage,Other,13,3,0,2,42700,Mercedes
+10368,289,47,1102.29,0,FEMALE,Associate,adm-clerical,hiking,own-child,73000,-37900,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,15,1,1,0,54000,Toyota
+10369,10,19,1185.78,0,FEMALE,JD,craft-repair,yachting,wife,0,-60700,Single Vehicle Collision,Side Collision,Minor Damage,Police,5,1,0,2,48950,Accura
+10370,309,47,1527.95,0,MALE,PhD,exec-managerial,hiking,other-relative,69400,0,Multi-vehicle Collision,Rear Collision,Major Damage,Other,15,4,0,1,77800,Dodge
+10371,396,57,1366.39,0,MALE,High School,protective-serv,exercise,other-relative,0,-22400,Multi-vehicle Collision,Front Collision,Major Damage,Other,22,3,2,1,52560,Saab
+10372,273,41,1403.9,0,FEMALE,PhD,farming-fishing,dancing,own-child,0,0,Multi-vehicle Collision,Side Collision,Total Loss,Police,16,2,1,2,44110,Honda
+10373,129,30,927.23,0,FEMALE,PhD,sales,video-games,husband,51500,0,Single Vehicle Collision,Front Collision,Total Loss,Other,7,1,1,3,74360,Suburu
+10375,419,53,736.07,6000000,MALE,College,transport-moving,chess,unmarried,45700,0,Multi-vehicle Collision,Side Collision,Minor Damage,Police,17,4,0,0,62280,Suburu
+10376,315,44,974.16,6000000,FEMALE,Masters,sales,reading,other-relative,0,-56800,Multi-vehicle Collision,Front Collision,Total Loss,Other,12,3,1,0,26730,Volkswagen
+10377,72,29,973.8,0,FEMALE,Associate,craft-repair,exercise,own-child,0,-85900,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,9,1,1,0,66200,Dodge
+10378,32,26,1260.32,6000000,MALE,JD,other-service,polo,not-in-family,0,-79800,Single Vehicle Collision,Side Collision,Total Loss,Fire,16,1,1,2,45500,Toyota
+10379,230,41,1464.03,0,MALE,JD,transport-moving,sleeping,own-child,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,19,3,2,0,53040,Audi
+10380,157,32,617.11,0,MALE,College,other-service,reading,other-relative,0,-54100,Multi-vehicle Collision,Front Collision,Major Damage,Other,14,3,1,2,50800,Mercedes
+10381,265,41,1724.46,6000000,FEMALE,Associate,craft-repair,sleeping,own-child,81800,0,Multi-vehicle Collision,Side Collision,Total Loss,Police,18,3,1,3,44200,Audi
+10382,47,34,1161.31,0,FEMALE,PhD,exec-managerial,base-jumping,other-relative,64800,-24300,Single Vehicle Collision,Front Collision,Minor Damage,Police,23,1,1,3,62920,Chevrolet
+10383,113,29,1091.73,0,MALE,PhD,exec-managerial,golf,not-in-family,36100,-42300,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,15,3,0,2,49950,Nissan
+10384,289,46,1209.07,0,MALE,JD,armed-forces,chess,unmarried,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,18,1,0,1,56430,BMW
+10385,254,41,1241.04,0,FEMALE,Masters,protective-serv,board-games,own-child,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Police,16,1,2,2,100210,Audi
+10386,115,30,1757.21,0,MALE,High School,prof-specialty,base-jumping,wife,46400,0,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,12,3,1,0,49140,Ford
+10387,236,38,802.24,0,FEMALE,College,other-service,paintball,not-in-family,0,-62500,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,16,1,0,1,66840,Mercedes
+10388,7,21,1342.72,0,MALE,Associate,machine-op-inspct,camping,wife,0,-45300,Single Vehicle Collision,Front Collision,Total Loss,Other,21,1,1,2,62460,Honda
+10389,208,36,1209.41,5000000,MALE,JD,machine-op-inspct,base-jumping,wife,0,0,Multi-vehicle Collision,Side Collision,Total Loss,Other,15,3,0,1,62810,Nissan
+10390,126,33,1141.71,2000000,FEMALE,JD,priv-house-serv,sleeping,own-child,36700,-73400,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,21,1,1,2,54160,Suburu
+10391,48,35,1090.03,0,FEMALE,JD,exec-managerial,golf,unmarried,0,-51000,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,1,1,0,2,48400,Saab
+10392,297,48,1464.73,3000000,MALE,PhD,exec-managerial,golf,other-relative,54900,-36700,Multi-vehicle Collision,Side Collision,Total Loss,Fire,17,3,0,0,51480,Toyota
+10393,160,36,1118.58,0,FEMALE,High School,prof-specialty,board-games,husband,0,-36600,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,5,3,2,1,51700,Saab
+10394,406,58,1117.04,0,MALE,MD,exec-managerial,video-games,own-child,0,-42700,Multi-vehicle Collision,Front Collision,Total Loss,Other,15,3,1,2,65520,Volkswagen
+10395,157,31,1257.83,7000000,MALE,High School,farming-fishing,reading,own-child,40700,-41600,Multi-vehicle Collision,Rear Collision,Major Damage,Other,2,4,2,2,47700,Accura
+10397,409,57,1191.8,6000000,MALE,High School,protective-serv,exercise,unmarried,55600,0,Single Vehicle Collision,Side Collision,Major Damage,Other,19,1,1,0,73320,Ford
+10398,252,46,1242.02,0,MALE,Masters,adm-clerical,dancing,wife,0,-28800,Single Vehicle Collision,Front Collision,Minor Damage,Fire,17,1,0,2,74900,Jeep
+10400,103,33,969.88,6000000,MALE,MD,armed-forces,exercise,own-child,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,21,1,1,0,76920,Chevrolet
+10401,369,53,1459.93,0,FEMALE,Masters,priv-house-serv,video-games,not-in-family,0,0,Multi-vehicle Collision,Front Collision,Total Loss,Police,10,2,1,3,77990,Jeep
+10402,261,46,1245.61,0,MALE,MD,transport-moving,base-jumping,own-child,0,0,Single Vehicle Collision,Front Collision,Total Loss,Fire,11,1,1,0,59670,Ford
+10403,159,33,1462.76,0,FEMALE,College,craft-repair,skydiving,husband,69200,-36900,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,23,3,2,0,44880,Mercedes
+10404,344,51,1398.46,0,MALE,Associate,sales,skydiving,other-relative,0,0,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,14,1,0,2,82830,Audi
+10405,437,60,1269.64,0,FEMALE,College,armed-forces,cross-fit,unmarried,48800,0,Single Vehicle Collision,Front Collision,Minor Damage,Other,10,1,1,3,84480,Chevrolet
+10406,65,30,1455.65,4000000,FEMALE,College,transport-moving,skydiving,wife,0,-66300,Multi-vehicle Collision,Side Collision,Total Loss,Fire,6,3,2,3,79800,Honda
+10407,280,41,1140.31,0,MALE,MD,adm-clerical,exercise,husband,29300,-64700,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,10,3,0,3,53020,Toyota
+10408,269,45,1330.46,0,FEMALE,High School,machine-op-inspct,sleeping,wife,54800,-64100,Multi-vehicle Collision,Side Collision,Total Loss,Police,5,3,0,0,24200,Suburu
+10409,275,40,1190.6,0,MALE,Masters,exec-managerial,camping,unmarried,0,-45300,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,17,1,1,3,43230,Chevrolet
+10413,247,44,1101.51,0,FEMALE,College,farming-fishing,camping,not-in-family,64000,0,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,22,3,2,2,69480,Chevrolet
+10414,56,29,1523.17,0,MALE,Masters,prof-specialty,movies,own-child,0,0,Multi-vehicle Collision,Front Collision,Major Damage,Fire,10,3,1,2,94560,Jeep
+10416,108,32,1257,4000000,FEMALE,High School,machine-op-inspct,basketball,unmarried,63900,-43700,Single Vehicle Collision,Front Collision,Total Loss,Other,23,1,1,3,61270,Suburu
+10417,328,49,1434.51,0,FEMALE,Masters,transport-moving,bungie-jumping,wife,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Police,19,1,0,2,71440,Mercedes
+10418,186,37,1628,0,FEMALE,JD,priv-house-serv,exercise,unmarried,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,22,1,1,2,55600,Jeep
+10420,138,33,1362.87,5000000,FEMALE,JD,exec-managerial,paintball,own-child,56900,-56900,Single Vehicle Collision,Side Collision,Minor Damage,Other,6,1,2,0,95810,BMW
+10421,208,41,1134.68,0,FEMALE,College,tech-support,chess,husband,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,18,1,2,2,69300,Volkswagen
+10422,147,37,1306.78,0,MALE,MD,prof-specialty,video-games,other-relative,0,0,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,22,1,1,0,81120,Toyota
+10423,8,21,1021.9,0,MALE,High School,handlers-cleaners,hiking,husband,0,0,Single Vehicle Collision,Front Collision,Major Damage,Other,21,1,0,0,91260,Toyota
+10424,297,48,1538.6,0,FEMALE,MD,other-service,kayaking,wife,0,-54700,Single Vehicle Collision,Side Collision,Minor Damage,Fire,12,1,0,0,60600,Ford
+10425,150,31,1354.5,0,MALE,Masters,machine-op-inspct,base-jumping,husband,52800,0,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,6,3,0,3,64800,Suburu
+10426,4,34,1282.93,0,FEMALE,College,exec-managerial,basketball,other-relative,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Police,0,4,0,0,66880,Chevrolet
+10427,210,35,1346.27,0,MALE,Masters,farming-fishing,cross-fit,not-in-family,44900,-91400,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,11,1,0,2,58200,BMW
+10428,91,31,1338.4,4000000,FEMALE,High School,priv-house-serv,polo,own-child,63600,0,Single Vehicle Collision,Side Collision,Minor Damage,Police,19,1,1,0,60570,Nissan
+10429,167,36,949.44,0,FEMALE,Masters,exec-managerial,camping,other-relative,0,-38400,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,22,3,0,0,69680,Mercedes
+10430,467,58,977.4,0,MALE,Masters,transport-moving,bungie-jumping,own-child,82200,0,Single Vehicle Collision,Front Collision,Total Loss,Fire,2,1,2,3,55700,Nissan
+10431,264,47,1181.46,10000000,FEMALE,JD,transport-moving,sleeping,other-relative,0,-67400,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,16,4,1,2,62370,Dodge
+10432,270,45,1187.53,0,FEMALE,PhD,priv-house-serv,yachting,not-in-family,83200,-53300,Multi-vehicle Collision,Side Collision,Total Loss,Other,23,3,0,0,54340,Saab
+10433,310,48,845.16,0,FEMALE,Masters,priv-house-serv,base-jumping,other-relative,0,0,Single Vehicle Collision,Front Collision,Major Damage,Police,21,1,1,0,55170,Audi
+10434,143,34,1442.27,0,MALE,College,priv-house-serv,exercise,wife,67900,0,Single Vehicle Collision,Front Collision,Minor Damage,Other,10,1,2,3,58500,Dodge
+10435,146,32,1276.43,0,MALE,Associate,priv-house-serv,skydiving,own-child,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Fire,12,1,0,3,59940,Honda
+10436,102,28,1075.41,0,MALE,MD,machine-op-inspct,reading,wife,55200,0,Single Vehicle Collision,Side Collision,Total Loss,Police,6,1,1,0,73400,Dodge
+10437,61,23,1111.72,0,MALE,JD,exec-managerial,bungie-jumping,other-relative,54600,0,Single Vehicle Collision,Side Collision,Major Damage,Fire,6,1,1,2,41850,Suburu
+10441,108,31,1175.7,0,MALE,Masters,protective-serv,yachting,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Fire,14,1,0,2,57330,Dodge
+10442,303,50,793.15,0,MALE,MD,tech-support,board-games,own-child,54600,-45500,Multi-vehicle Collision,Front Collision,Total Loss,Other,17,3,0,3,81960,Dodge
+10443,152,33,942.51,0,FEMALE,PhD,transport-moving,exercise,wife,0,0,Single Vehicle Collision,Side Collision,Major Damage,Fire,16,1,0,0,70400,Suburu
+10446,414,52,1335.13,0,FEMALE,High School,farming-fishing,chess,unmarried,44000,-71000,Single Vehicle Collision,Rear Collision,Total Loss,Police,13,1,1,1,54810,Chevrolet
+10447,163,37,1178.95,6000000,FEMALE,JD,priv-house-serv,dancing,own-child,0,-67300,Single Vehicle Collision,Rear Collision,Total Loss,Fire,20,1,2,3,49400,Jeep
+10448,352,53,1793.16,0,MALE,Associate,tech-support,exercise,wife,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,23,1,2,2,68750,Chevrolet
+10449,27,32,1008.38,0,FEMALE,PhD,adm-clerical,yachting,other-relative,37900,0,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,11,1,1,0,61500,Dodge
+10450,239,39,1396.83,0,FEMALE,Masters,other-service,reading,husband,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,0,4,0,3,76890,BMW
+10451,33,32,1402.78,5000000,FEMALE,PhD,other-service,base-jumping,husband,70300,-50300,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,2,1,0,1,56070,Toyota
+10452,88,30,1437.88,0,FEMALE,College,transport-moving,reading,husband,42800,-51200,Single Vehicle Collision,Side Collision,Total Loss,Fire,3,1,2,0,56000,Chevrolet
+10454,20,37,1482.14,0,FEMALE,Associate,transport-moving,reading,husband,33000,-43600,Multi-vehicle Collision,Rear Collision,Total Loss,Other,15,3,2,1,60750,Suburu
+10455,126,30,1171.75,0,FEMALE,Associate,machine-op-inspct,board-games,not-in-family,46500,-42700,Single Vehicle Collision,Side Collision,Minor Damage,Other,23,1,2,3,48730,Chevrolet
+10456,264,43,1353.33,0,MALE,Associate,adm-clerical,video-games,not-in-family,0,-8500,Multi-vehicle Collision,Front Collision,Minor Damage,Police,9,3,2,0,95150,Ford
+10458,123,28,1836.02,0,MALE,Masters,transport-moving,movies,own-child,38000,-41200,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,5,1,2,1,79800,Volkswagen
+10459,347,51,1480.79,9000000,FEMALE,MD,priv-house-serv,board-games,unmarried,0,-12100,Single Vehicle Collision,Side Collision,Total Loss,Other,15,1,0,2,103560,Jeep
+10460,163,38,1453.92,0,FEMALE,PhD,other-service,yachting,other-relative,51700,0,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,13,1,2,3,79500,Accura
+10461,271,44,1340.71,0,FEMALE,High School,tech-support,base-jumping,other-relative,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Other,16,1,2,2,76230,Volkswagen
+10462,410,54,714.03,0,MALE,MD,protective-serv,board-games,own-child,0,-17000,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,0,1,0,2,59520,Honda
+10463,448,57,1376.16,0,FEMALE,PhD,tech-support,hiking,own-child,38600,-50300,Multi-vehicle Collision,Front Collision,Major Damage,Police,10,3,2,1,47760,Suburu
+10464,218,41,914.22,0,MALE,JD,prof-specialty,golf,wife,37900,-72900,Multi-vehicle Collision,Side Collision,Total Loss,Police,14,3,2,0,84590,Saab
+10465,43,38,1601.47,0,MALE,PhD,handlers-cleaners,skydiving,other-relative,64400,0,Multi-vehicle Collision,Front Collision,Total Loss,Other,1,3,2,2,61650,Nissan
+10466,33,33,1096.79,6000000,FEMALE,Associate,handlers-cleaners,dancing,unmarried,45500,-60600,Single Vehicle Collision,Rear Collision,Major Damage,Police,16,1,2,1,81400,BMW
+10467,126,34,1078.22,0,FEMALE,Masters,transport-moving,camping,wife,54500,0,Multi-vehicle Collision,Side Collision,Major Damage,Fire,2,3,0,1,58410,Chevrolet
+10468,411,56,1595.28,0,FEMALE,College,protective-serv,exercise,other-relative,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,23,3,0,0,38610,Volkswagen
+10469,225,37,1217.84,5000000,FEMALE,High School,farming-fishing,yachting,not-in-family,49600,0,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,19,3,2,2,57600,Volkswagen
+10470,35,35,1117.42,0,FEMALE,PhD,protective-serv,kayaking,not-in-family,0,-51900,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,23,3,2,2,53190,Volkswagen
+10471,460,57,1567.37,0,FEMALE,JD,craft-repair,skydiving,husband,62500,0,Single Vehicle Collision,Front Collision,Major Damage,Other,10,1,2,3,58300,Nissan
+10472,195,38,1294.93,6000000,MALE,MD,tech-support,video-games,unmarried,38000,-50300,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,12,3,1,2,64620,Dodge
+10473,360,51,1152.12,0,MALE,PhD,armed-forces,hiking,not-in-family,0,-62400,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,15,3,2,0,90480,BMW
+10476,146,36,1233.96,0,FEMALE,Masters,other-service,golf,other-relative,34500,-60600,Multi-vehicle Collision,Side Collision,Total Loss,Police,16,3,1,1,55900,Nissan
+10477,67,29,1861.43,0,MALE,High School,adm-clerical,polo,husband,60400,-67800,Single Vehicle Collision,Rear Collision,Major Damage,Other,16,1,0,3,63800,Saab
+10478,380,56,1570.86,0,MALE,MD,farming-fishing,cross-fit,other-relative,66000,0,Single Vehicle Collision,Side Collision,Total Loss,Police,10,1,0,1,58160,Saab
+10480,317,46,1012.78,0,MALE,MD,sales,yachting,other-relative,43700,0,Single Vehicle Collision,Front Collision,Major Damage,Fire,18,1,2,1,104610,Mercedes
+10481,264,44,1047.06,6000000,MALE,College,exec-managerial,sleeping,wife,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,20,3,0,2,69850,Ford
+10482,20,21,1390.29,0,FEMALE,Masters,priv-house-serv,polo,other-relative,0,-41200,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,14,1,0,0,62900,Accura
+10483,116,30,951.46,0,MALE,JD,handlers-cleaners,golf,not-in-family,0,-35500,Multi-vehicle Collision,Front Collision,Major Damage,Other,8,3,0,3,59670,Volkswagen
+10484,222,40,1226.78,0,MALE,JD,armed-forces,camping,unmarried,49600,-49200,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,17,2,2,0,81500,BMW
+10485,439,56,1280.9,0,MALE,High School,armed-forces,video-games,own-child,48900,-40900,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,9,1,2,0,50000,Jeep
+10486,66,28,1472.77,0,MALE,Associate,adm-clerical,exercise,husband,0,-31700,Single Vehicle Collision,Front Collision,Total Loss,Other,0,1,2,1,48290,Nissan
+10487,128,29,1878.44,0,MALE,High School,other-service,golf,husband,0,-76000,Single Vehicle Collision,Rear Collision,Total Loss,Fire,2,1,0,0,59070,Chevrolet
+10488,69,24,1418.5,0,FEMALE,High School,armed-forces,yachting,other-relative,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,23,3,0,0,63300,Dodge
+10489,294,46,1532.8,0,MALE,College,prof-specialty,exercise,own-child,0,0,Single Vehicle Collision,Side Collision,Total Loss,Other,8,1,0,3,65780,Mercedes
+10490,19,29,1304.35,0,MALE,JD,transport-moving,cross-fit,not-in-family,0,0,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,6,3,0,2,75400,Dodge
+10492,4,39,1326.98,6000000,FEMALE,High School,machine-op-inspct,reading,unmarried,64200,0,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,14,3,1,3,54120,Jeep
+10493,298,49,862.92,0,MALE,MD,machine-op-inspct,camping,wife,0,-71700,Multi-vehicle Collision,Side Collision,Major Damage,Other,16,3,0,2,69480,Saab
+10494,231,43,1331.69,0,FEMALE,Masters,adm-clerical,reading,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Police,12,1,1,2,66950,Chevrolet
+10495,338,47,1486.04,0,FEMALE,Associate,armed-forces,board-games,own-child,0,-56200,Multi-vehicle Collision,Rear Collision,Major Damage,Other,1,3,2,3,64100,Dodge
+10496,261,46,870.55,0,MALE,PhD,prof-specialty,camping,unmarried,0,-49400,Single Vehicle Collision,Rear Collision,Minor Damage,Other,19,1,0,3,80280,Chevrolet
+10498,0,32,1377.04,0,MALE,College,tech-support,base-jumping,wife,61400,-41100,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,6,4,1,1,39720,Accura
+10499,405,58,1237.88,0,MALE,MD,exec-managerial,exercise,not-in-family,0,-46900,Single Vehicle Collision,Front Collision,Major Damage,Police,11,1,0,0,63580,Mercedes
+10500,304,49,1525.86,0,FEMALE,PhD,craft-repair,camping,own-child,0,0,Single Vehicle Collision,Side Collision,Minor Damage,Other,2,1,1,1,73370,Saab
+10501,1,29,854.58,0,FEMALE,JD,craft-repair,paintball,other-relative,52200,0,Single Vehicle Collision,Side Collision,Minor Damage,Police,15,1,2,3,86790,Honda
+10502,26,39,770.76,0,MALE,Masters,tech-support,sleeping,husband,0,-53700,Single Vehicle Collision,Side Collision,Major Damage,Police,0,1,0,2,49800,Mercedes
+10503,202,38,1132.74,0,FEMALE,Associate,armed-forces,exercise,husband,0,-37500,Single Vehicle Collision,Side Collision,Major Damage,Other,12,1,1,1,77440,Nissan
+10504,289,48,1173.37,8000000,FEMALE,PhD,handlers-cleaners,board-games,own-child,0,-42700,Single Vehicle Collision,Front Collision,Total Loss,Other,1,1,1,0,42900,Accura
+10505,61,26,1188.28,6000000,FEMALE,JD,farming-fishing,skydiving,wife,0,-53800,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,16,2,1,0,53820,Ford
+10506,334,46,876.88,6000000,MALE,MD,sales,reading,other-relative,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Police,2,1,2,1,57330,Jeep
+10507,12,24,1143.95,0,FEMALE,PhD,tech-support,paintball,other-relative,51400,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,13,3,2,1,53370,Nissan
+10508,86,29,1409.06,0,MALE,High School,prof-specialty,yachting,husband,74200,-68100,Single Vehicle Collision,Front Collision,Minor Damage,Police,0,1,2,2,62920,Accura
+10509,83,24,1070.63,0,FEMALE,High School,machine-op-inspct,board-games,unmarried,0,0,Multi-vehicle Collision,Front Collision,Total Loss,Fire,0,3,0,1,61600,Honda
+10510,126,30,916.13,0,MALE,College,sales,golf,unmarried,55300,-58400,Multi-vehicle Collision,Rear Collision,Total Loss,Police,16,3,2,0,74160,Mercedes
+10511,209,38,1191.5,0,MALE,High School,priv-house-serv,reading,husband,38600,-52900,Single Vehicle Collision,Rear Collision,Total Loss,Police,8,1,2,0,80100,Audi
+10513,194,34,1193.45,0,MALE,JD,other-service,hiking,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,11,1,2,1,58800,Nissan
+10514,184,38,1437.53,0,FEMALE,College,transport-moving,chess,not-in-family,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,6,3,0,2,53730,Dodge
+10515,479,60,1304.83,0,FEMALE,College,other-service,cross-fit,husband,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,18,1,0,0,60600,Honda
+10516,284,48,1168.8,0,FEMALE,JD,tech-support,movies,other-relative,0,-42400,Single Vehicle Collision,Side Collision,Total Loss,Other,11,1,0,3,35750,Mercedes
+10517,65,27,1164.97,0,FEMALE,College,adm-clerical,exercise,wife,43000,-42500,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,17,1,1,2,42840,Chevrolet
+10518,222,39,1232.72,0,MALE,High School,armed-forces,hiking,own-child,87800,-51200,Multi-vehicle Collision,Front Collision,Major Damage,Fire,21,3,1,0,87960,Jeep
+10519,196,41,1800.76,0,MALE,JD,protective-serv,camping,other-relative,0,-78600,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,0,3,1,0,47800,Jeep
+10521,280,43,1559.34,0,MALE,JD,transport-moving,hiking,own-child,0,-51600,Single Vehicle Collision,Front Collision,Total Loss,Fire,1,1,0,2,77000,Accura
+10522,5,26,1137.02,0,FEMALE,PhD,farming-fishing,skydiving,not-in-family,31500,0,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,22,1,1,3,88110,Audi
+10523,220,42,1281.72,0,MALE,College,farming-fishing,hiking,other-relative,33500,-49500,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,20,4,0,2,47740,Honda
+10524,85,30,796.35,0,FEMALE,MD,craft-repair,video-games,own-child,72400,-77000,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,9,3,2,1,58960,Ford
+10527,316,45,1290.74,5000000,FEMALE,High School,prof-specialty,kayaking,husband,58300,0,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,6,3,2,0,78870,Suburu
+10529,379,54,1251.16,0,FEMALE,Associate,machine-op-inspct,kayaking,not-in-family,41400,0,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,14,1,0,1,75960,Jeep
+10530,15,34,1586.41,0,FEMALE,High School,sales,video-games,other-relative,33500,-58900,Single Vehicle Collision,Front Collision,Major Damage,Police,10,1,1,3,75570,BMW
+10531,354,48,1526.11,5000000,FEMALE,Masters,sales,exercise,unmarried,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Police,12,1,2,3,90240,Chevrolet
+10532,342,53,1028.44,0,FEMALE,College,prof-specialty,dancing,not-in-family,0,0,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,12,1,0,0,80960,Accura
+10533,169,38,1555.94,0,MALE,PhD,craft-repair,skydiving,own-child,23300,0,Multi-vehicle Collision,Front Collision,Total Loss,Other,12,3,1,3,79080,Mercedes
+10535,259,42,1170.53,0,FEMALE,PhD,armed-forces,sleeping,wife,65000,-49200,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,17,3,1,2,62590,Nissan
+10536,65,23,1099.95,0,FEMALE,College,sales,dancing,wife,0,-71900,Single Vehicle Collision,Side Collision,Major Damage,Other,14,1,1,0,52400,Accura
+10537,254,46,1472.43,0,MALE,MD,tech-support,basketball,husband,0,-90600,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,3,3,1,3,63580,Volkswagen
+10538,440,55,1275.62,0,FEMALE,Associate,priv-house-serv,reading,other-relative,0,-56200,Multi-vehicle Collision,Side Collision,Minor Damage,Police,18,3,2,1,61400,Nissan
+10540,230,44,1009.37,0,FEMALE,College,prof-specialty,hiking,other-relative,45400,-39400,Single Vehicle Collision,Front Collision,Total Loss,Fire,19,1,0,2,74140,BMW
+10541,138,30,1093.07,4000000,FEMALE,PhD,other-service,reading,wife,27700,-72400,Single Vehicle Collision,Front Collision,Major Damage,Other,0,1,2,2,83160,Volkswagen
+10543,93,31,1017.18,0,FEMALE,MD,prof-specialty,paintball,husband,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Police,21,3,1,3,48070,Saab
+10544,37,25,1221.17,0,FEMALE,Masters,protective-serv,golf,not-in-family,49300,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,4,3,0,0,51030,Suburu
+10545,254,40,1927.87,0,MALE,MD,prof-specialty,yachting,husband,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,10,1,0,1,43280,Honda
+10546,131,29,978.27,0,FEMALE,Associate,sales,paintball,own-child,65700,0,Single Vehicle Collision,Front Collision,Major Damage,Fire,5,1,1,3,76400,Suburu
+10547,230,43,1221.14,0,MALE,MD,prof-specialty,board-games,wife,48100,0,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,13,1,0,2,75460,Audi
+10548,313,50,1255.62,0,MALE,MD,armed-forces,polo,unmarried,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Other,18,3,2,1,69000,Ford
+10550,101,29,1380.89,0,MALE,PhD,armed-forces,dancing,own-child,30000,-53000,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,0,3,2,1,67210,BMW
+10551,153,37,1010.77,0,MALE,High School,transport-moving,basketball,unmarried,52300,-55600,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,5,3,0,3,42500,Volkswagen
+10552,337,53,1205.86,0,MALE,Associate,armed-forces,basketball,wife,0,-34600,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,8,1,0,1,86400,Accura
+10555,204,40,1256.2,0,FEMALE,JD,sales,hiking,not-in-family,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Other,10,3,1,2,41700,Saab
+10556,364,51,1268.35,0,MALE,Masters,transport-moving,board-games,wife,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Other,16,1,2,1,77330,Volkswagen
+10559,210,35,1433.24,0,FEMALE,College,exec-managerial,yachting,not-in-family,0,-19500,Multi-vehicle Collision,Side Collision,Total Loss,Fire,11,3,2,1,24570,Saab
+10560,194,38,1231.25,0,FEMALE,PhD,craft-repair,movies,not-in-family,46500,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,15,3,1,0,53680,Toyota
+10561,294,49,1135.43,0,MALE,Masters,farming-fishing,bungie-jumping,own-child,22700,0,Multi-vehicle Collision,Side Collision,Total Loss,Police,23,3,1,1,42900,Chevrolet
+10562,272,41,945.73,5000000,MALE,MD,protective-serv,chess,wife,38600,-42800,Single Vehicle Collision,Front Collision,Minor Damage,Fire,23,1,0,0,84100,Ford
+10563,27,27,1118.76,0,FEMALE,College,adm-clerical,dancing,own-child,0,-55800,Single Vehicle Collision,Front Collision,Total Loss,Fire,23,1,1,3,61560,Ford
+10564,251,39,1231.98,0,FEMALE,Associate,other-service,hiking,not-in-family,0,-31700,Single Vehicle Collision,Rear Collision,Minor Damage,Police,10,1,0,0,44240,Dodge
+10565,180,33,1005.47,0,FEMALE,JD,protective-serv,hiking,own-child,58100,-49000,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,12,4,2,3,57700,Jeep
+10566,392,50,1108.97,0,FEMALE,PhD,exec-managerial,exercise,not-in-family,68400,-66800,Single Vehicle Collision,Side Collision,Minor Damage,Other,4,1,2,2,108030,Saab
+10567,143,30,1392.39,5000000,FEMALE,High School,exec-managerial,dancing,unmarried,0,-65700,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,16,1,2,0,54300,Toyota
+10568,371,54,1317.97,0,MALE,High School,craft-repair,movies,wife,34700,-81000,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,18,3,1,2,32280,Ford
+10569,292,42,1588.22,0,MALE,JD,machine-op-inspct,camping,other-relative,0,-53800,Multi-vehicle Collision,Rear Collision,Total Loss,Other,15,3,1,1,84600,Chevrolet
+10570,165,35,900.02,6000000,MALE,College,craft-repair,camping,own-child,0,-49900,Single Vehicle Collision,Front Collision,Total Loss,Other,8,1,1,3,69700,BMW
+10571,158,33,1744.64,3000000,MALE,JD,prof-specialty,movies,unmarried,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,4,3,0,1,36400,Volkswagen
+10572,241,39,1260.56,0,FEMALE,JD,adm-clerical,paintball,own-child,0,-54900,Multi-vehicle Collision,Side Collision,Minor Damage,Police,20,3,0,2,37520,Jeep
+10573,103,33,1021.14,0,FEMALE,Masters,other-service,paintball,wife,69500,-47700,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,1,3,2,3,79090,Dodge
+10574,402,54,1285.09,0,MALE,JD,farming-fishing,board-games,not-in-family,48000,-79600,Single Vehicle Collision,Rear Collision,Major Damage,Other,19,1,0,2,67770,Mercedes
+10575,102,32,1537.07,3000000,MALE,JD,tech-support,chess,wife,0,0,Single Vehicle Collision,Side Collision,Total Loss,Other,11,1,1,0,47400,Chevrolet
+10576,182,40,1022.42,0,MALE,PhD,other-service,skydiving,husband,50000,-56900,Single Vehicle Collision,Front Collision,Total Loss,Other,13,1,0,2,71100,Audi
+10577,282,46,1558.86,0,MALE,MD,other-service,dancing,wife,51100,-75100,Single Vehicle Collision,Front Collision,Minor Damage,Police,2,1,2,2,69400,BMW
+10578,222,39,1757.87,0,MALE,High School,transport-moving,board-games,not-in-family,71400,0,Multi-vehicle Collision,Rear Collision,Major Damage,Other,9,3,2,1,55000,Saab
+10579,415,52,973.5,0,MALE,PhD,machine-op-inspct,polo,not-in-family,50400,0,Multi-vehicle Collision,Rear Collision,Total Loss,Police,15,2,1,3,51090,Toyota
+10580,51,34,1430.8,0,MALE,PhD,machine-op-inspct,camping,unmarried,0,0,Single Vehicle Collision,Side Collision,Major Damage,Fire,23,1,2,3,64200,Honda
+10581,255,45,1192.27,0,MALE,High School,sales,base-jumping,own-child,0,-40200,Single Vehicle Collision,Front Collision,Total Loss,Other,16,1,2,0,67320,Ford
+10582,143,31,1163.83,0,MALE,Associate,protective-serv,movies,husband,37700,0,Multi-vehicle Collision,Side Collision,Major Damage,Other,21,4,2,0,76120,Audi
+10583,130,28,1003.15,0,FEMALE,JD,farming-fishing,movies,other-relative,0,-38500,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,21,2,2,1,85020,Ford
+10584,242,41,1153.54,6000000,MALE,Masters,protective-serv,polo,unmarried,0,-57000,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,3,3,0,1,68090,Toyota
+10588,463,59,979.73,0,FEMALE,JD,exec-managerial,yachting,not-in-family,51700,0,Multi-vehicle Collision,Front Collision,Major Damage,Other,14,2,1,2,72400,Chevrolet
+10589,472,64,989.24,0,MALE,Masters,other-service,skydiving,not-in-family,0,0,Single Vehicle Collision,Front Collision,Major Damage,Fire,13,1,2,3,70900,Mercedes
+10590,75,25,1389.86,0,FEMALE,Associate,priv-house-serv,hiking,husband,0,0,Multi-vehicle Collision,Side Collision,Total Loss,Other,23,2,2,3,65100,Saab
+10591,193,40,1233.85,0,FEMALE,College,handlers-cleaners,chess,husband,0,0,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,23,3,2,1,64260,Ford
+10592,43,43,1320.39,0,FEMALE,Associate,armed-forces,yachting,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,16,1,2,1,79970,Honda
+10593,253,41,1435.09,0,FEMALE,College,machine-op-inspct,bungie-jumping,not-in-family,36600,0,Single Vehicle Collision,Rear Collision,Total Loss,Police,17,1,2,0,56610,Chevrolet
+10594,152,30,1448.54,0,FEMALE,JD,craft-repair,polo,wife,58600,0,Single Vehicle Collision,Side Collision,Major Damage,Fire,9,1,1,1,84590,Toyota
+10595,160,38,1733.56,0,MALE,High School,sales,sleeping,wife,0,-43800,Multi-vehicle Collision,Side Collision,Major Damage,Fire,13,3,2,1,66780,Mercedes
+10596,56,36,1533.07,0,MALE,JD,farming-fishing,exercise,own-child,0,-28800,Single Vehicle Collision,Rear Collision,Major Damage,Police,13,1,1,2,58500,Ford
+10599,286,41,1298.85,6000000,FEMALE,High School,sales,camping,other-relative,71300,-70300,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,16,3,1,3,54450,Saab
+10600,239,38,1276.73,5000000,FEMALE,Masters,handlers-cleaners,bungie-jumping,other-relative,0,0,Multi-vehicle Collision,Front Collision,Major Damage,Police,12,3,1,3,61920,Saab
+10601,64,29,1202.28,0,MALE,High School,exec-managerial,cross-fit,other-relative,0,-61400,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,4,1,1,2,43700,Nissan
+10602,98,31,671.92,0,MALE,Masters,machine-op-inspct,bungie-jumping,wife,0,-26400,Single Vehicle Collision,Front Collision,Minor Damage,Other,3,1,2,0,64080,Ford
+10603,16,35,1358.03,0,MALE,JD,sales,chess,own-child,59300,-31400,Single Vehicle Collision,Rear Collision,Total Loss,Other,0,1,2,1,55000,Volkswagen
+10605,75,27,1141.1,0,MALE,JD,armed-forces,movies,other-relative,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Police,15,2,0,1,71640,Toyota
+10606,246,44,1397,0,MALE,High School,machine-op-inspct,reading,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Other,6,1,1,0,61740,Accura
+10607,110,27,1664.66,0,FEMALE,Associate,priv-house-serv,golf,own-child,0,-66200,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,3,1,0,3,57500,Audi
+10609,267,46,1546.01,0,FEMALE,MD,adm-clerical,polo,wife,0,0,Multi-vehicle Collision,Front Collision,Total Loss,Police,4,4,2,1,77100,Volkswagen
+10610,463,57,1063.67,0,MALE,Masters,priv-house-serv,dancing,wife,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Police,14,1,2,0,59400,Dodge
+10611,303,46,709.14,0,MALE,Masters,machine-op-inspct,kayaking,husband,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,3,3,1,0,54890,Toyota
+10612,137,30,1039.55,0,MALE,MD,exec-managerial,kayaking,unmarried,55600,-59700,Multi-vehicle Collision,Front Collision,Minor Damage,Other,4,3,2,1,74030,Chevrolet
+10613,56,42,1339.39,0,FEMALE,Associate,adm-clerical,chess,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Other,13,1,1,2,61490,BMW
+10614,75,27,1202.75,0,MALE,High School,handlers-cleaners,board-games,not-in-family,57900,-90100,Multi-vehicle Collision,Front Collision,Minor Damage,Police,23,3,0,2,79560,Volkswagen
+10616,153,34,991.39,0,MALE,High School,tech-support,paintball,other-relative,45600,-61400,Multi-vehicle Collision,Side Collision,Total Loss,Other,0,3,1,0,77770,Nissan
+10617,255,43,984.02,0,FEMALE,JD,transport-moving,board-games,unmarried,75800,0,Multi-vehicle Collision,Side Collision,Major Damage,Fire,14,2,2,2,74700,Nissan
+10618,103,26,1354.83,0,MALE,MD,tech-support,sleeping,husband,66300,0,Multi-vehicle Collision,Front Collision,Minor Damage,Police,14,2,2,2,40600,Volkswagen
+10619,97,28,830.31,0,MALE,JD,farming-fishing,video-games,husband,0,-32600,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,22,1,1,0,45270,Jeep
+10620,214,36,987.42,7000000,FEMALE,Associate,machine-op-inspct,kayaking,own-child,0,0,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,17,3,0,3,47080,Saab
+10621,438,57,1119.29,0,FEMALE,MD,machine-op-inspct,chess,husband,0,0,Single Vehicle Collision,Side Collision,Minor Damage,Police,14,1,0,0,40700,Volkswagen
+10622,87,27,1048.39,0,FEMALE,Masters,transport-moving,polo,own-child,0,0,Single Vehicle Collision,Side Collision,Minor Damage,Police,2,1,2,1,34650,Ford
+10624,206,42,1230.76,0,MALE,High School,machine-op-inspct,yachting,unmarried,0,-74200,Single Vehicle Collision,Rear Collision,Major Damage,Fire,2,1,1,1,78980,Saab
+10626,422,60,1555.52,0,FEMALE,MD,machine-op-inspct,hiking,own-child,43600,-67800,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,11,1,1,1,85250,Mercedes
+10627,303,50,836.11,5000000,MALE,Masters,sales,camping,not-in-family,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Fire,1,4,1,2,72840,Dodge
+10629,239,39,625.08,0,FEMALE,JD,protective-serv,hiking,wife,44200,-37000,Single Vehicle Collision,Front Collision,Major Damage,Fire,10,1,2,3,87890,BMW
+10630,330,47,1133.27,0,FEMALE,High School,craft-repair,chess,wife,0,-56400,Multi-vehicle Collision,Side Collision,Total Loss,Other,20,2,0,2,60500,Ford
+10631,128,35,1366.6,0,FEMALE,MD,machine-op-inspct,kayaking,other-relative,0,0,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,10,3,2,1,88220,Chevrolet
+10632,147,37,1439.9,6000000,FEMALE,Associate,prof-specialty,video-games,husband,0,-48400,Multi-vehicle Collision,Rear Collision,Total Loss,Other,2,2,1,2,53680,Accura
+10633,287,45,1230.69,0,MALE,Masters,transport-moving,golf,not-in-family,0,-54600,Single Vehicle Collision,Front Collision,Minor Damage,Fire,19,1,0,2,53800,Accura
+10634,142,29,1307.68,0,FEMALE,MD,craft-repair,dancing,husband,0,-48500,Single Vehicle Collision,Rear Collision,Major Damage,Police,10,1,1,2,54360,Mercedes
+10635,162,35,1124.69,0,FEMALE,Masters,handlers-cleaners,bungie-jumping,husband,0,0,Single Vehicle Collision,Side Collision,Major Damage,Police,14,1,0,3,54340,Toyota
+10639,34,34,1295.87,0,FEMALE,PhD,priv-house-serv,chess,husband,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,4,3,1,0,50800,Audi
+10640,290,48,1161.03,5000000,MALE,Associate,adm-clerical,video-games,not-in-family,45300,0,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,20,2,1,1,41520,Nissan
+10641,182,38,1441.06,0,FEMALE,Masters,armed-forces,movies,husband,53800,-78300,Single Vehicle Collision,Side Collision,Total Loss,Police,18,1,2,3,89650,Dodge
+10642,362,55,1097.99,0,FEMALE,JD,other-service,base-jumping,unmarried,44400,-71500,Multi-vehicle Collision,Rear Collision,Total Loss,Police,0,3,0,3,39690,Suburu
+10643,143,32,1464.42,0,FEMALE,High School,exec-managerial,golf,husband,79900,0,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,1,1,2,0,62260,Saab
+10644,183,38,1543.68,0,FEMALE,Masters,prof-specialty,paintball,not-in-family,20200,0,Single Vehicle Collision,Side Collision,Major Damage,Police,17,1,0,1,51920,Audi
+10645,254,40,1390.89,5000000,MALE,College,armed-forces,bungie-jumping,wife,0,-74400,Single Vehicle Collision,Front Collision,Minor Damage,Other,23,1,2,2,53460,Volkswagen
+10646,249,43,1148.58,0,FEMALE,MD,adm-clerical,golf,not-in-family,0,-71200,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,4,3,2,1,57100,Honda
+10647,169,36,1616.26,0,MALE,High School,exec-managerial,yachting,unmarried,50700,-57600,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,0,3,2,3,77440,Dodge
+10648,235,40,1398.94,0,MALE,College,craft-repair,bungie-jumping,husband,0,0,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,11,1,1,2,68300,Suburu
+10650,16,32,968.46,0,MALE,MD,tech-support,chess,not-in-family,50800,-66200,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,0,3,0,2,59400,Dodge
+10651,128,31,1045.12,0,FEMALE,High School,transport-moving,cross-fit,other-relative,0,-28300,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,2,3,0,2,69930,Ford
+10652,103,27,1537.33,0,FEMALE,College,handlers-cleaners,board-games,husband,0,-74800,Multi-vehicle Collision,Front Collision,Minor Damage,Police,11,3,1,1,77700,Jeep
+10653,356,54,912.3,0,MALE,College,prof-specialty,yachting,wife,58500,-44000,Multi-vehicle Collision,Front Collision,Major Damage,Other,23,3,2,1,68750,Audi
+10654,109,29,1007.28,6000000,FEMALE,High School,adm-clerical,movies,husband,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Police,17,3,1,3,91080,Jeep
+10655,2,20,1189.98,4000000,FEMALE,High School,craft-repair,golf,other-relative,0,-54700,Single Vehicle Collision,Side Collision,Minor Damage,Other,22,1,1,3,48360,Audi
+10656,198,34,1576.41,0,MALE,Associate,handlers-cleaners,kayaking,other-relative,0,-55100,Single Vehicle Collision,Side Collision,Major Damage,Other,18,1,1,1,95000,Ford
+10658,252,39,1312.22,9000000,MALE,High School,transport-moving,cross-fit,other-relative,0,-33300,Multi-vehicle Collision,Front Collision,Minor Damage,Other,15,3,0,3,59400,Jeep
+10659,303,43,671.01,7000000,FEMALE,Associate,machine-op-inspct,camping,other-relative,42900,-61500,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,20,1,2,0,60210,Nissan
+10660,101,32,895.14,0,MALE,JD,sales,video-games,other-relative,52600,-30400,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,4,1,0,3,43600,Suburu
+10661,446,57,1373.21,0,MALE,College,adm-clerical,sleeping,unmarried,42700,-64900,Multi-vehicle Collision,Front Collision,Total Loss,Police,10,3,0,0,62800,Jeep
+10662,330,48,1625.65,0,MALE,College,farming-fishing,skydiving,husband,0,0,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,10,1,1,3,59500,Dodge
+10663,211,37,1295.63,4000000,FEMALE,PhD,armed-forces,skydiving,not-in-family,42200,-33800,Multi-vehicle Collision,Front Collision,Total Loss,Police,22,3,1,0,53460,Honda
+10664,172,33,1459.96,6000000,FEMALE,High School,adm-clerical,reading,wife,41300,-42000,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,15,3,0,1,41690,Saab
+10665,316,46,1219.94,7000000,FEMALE,Masters,prof-specialty,paintball,wife,0,-51000,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,13,1,0,1,63100,Accura
+10666,435,60,1064.49,5000000,MALE,Associate,priv-house-serv,chess,other-relative,73500,-43300,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,23,1,2,1,62880,Mercedes
+10667,344,51,959.83,0,FEMALE,Masters,sales,paintball,not-in-family,0,-38700,Multi-vehicle Collision,Side Collision,Major Damage,Fire,18,3,2,2,75400,BMW
+10668,204,40,1767.02,0,MALE,JD,machine-op-inspct,hiking,husband,0,-49300,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,7,1,1,1,46200,Audi
+10669,278,47,1285.01,0,MALE,Masters,machine-op-inspct,sleeping,not-in-family,0,-39800,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,21,1,2,2,58500,Toyota
+10670,434,57,1422.95,0,MALE,JD,transport-moving,bungie-jumping,husband,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Other,15,3,1,3,66240,Nissan
+10671,209,36,1223.39,0,FEMALE,MD,craft-repair,camping,wife,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,17,3,1,3,65440,Jeep
+10672,250,43,1539.06,0,MALE,Masters,sales,exercise,other-relative,37800,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,2,1,0,3,64200,Ford
+10673,61,25,988.06,0,FEMALE,Masters,other-service,dancing,not-in-family,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,1,3,1,0,32320,Dodge
+10674,80,28,1740.57,0,FEMALE,College,farming-fishing,golf,wife,0,-18600,Single Vehicle Collision,Rear Collision,Major Damage,Police,3,1,0,1,33480,Dodge
+10677,32,29,1446.98,0,MALE,MD,adm-clerical,sleeping,own-child,0,-45700,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,11,3,2,0,57970,Saab
+10679,276,45,948.1,0,FEMALE,High School,machine-op-inspct,reading,wife,44500,-61400,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,11,3,0,2,69300,Ford
+10680,148,30,1471.24,0,FEMALE,Masters,farming-fishing,camping,own-child,57500,-93600,Multi-vehicle Collision,Side Collision,Minor Damage,Police,4,3,2,2,32480,Dodge
+10681,222,38,1157.97,0,MALE,MD,machine-op-inspct,hiking,not-in-family,0,-64500,Single Vehicle Collision,Front Collision,Total Loss,Police,20,1,2,2,60480,Accura
+10684,238,43,1524.45,4000000,MALE,High School,handlers-cleaners,chess,wife,0,-44800,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,21,4,0,0,42700,Saab
+10685,313,47,1556.17,0,MALE,College,prof-specialty,reading,wife,63900,-53300,Single Vehicle Collision,Front Collision,Major Damage,Ambulance,20,1,1,3,40260,Accura
+10686,334,50,1216.24,0,MALE,Masters,priv-house-serv,polo,wife,26700,-47200,Single Vehicle Collision,Rear Collision,Major Damage,Fire,7,1,2,0,50000,Chevrolet
+10688,194,41,1203.81,0,MALE,JD,transport-moving,video-games,not-in-family,52500,-51300,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,17,3,0,2,95900,Saab
+10689,290,47,1393.34,0,MALE,High School,exec-managerial,bungie-jumping,other-relative,0,-61400,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,20,3,1,3,56160,Audi
+10690,26,42,1484.48,0,MALE,PhD,armed-forces,sleeping,not-in-family,50700,-36300,Single Vehicle Collision,Side Collision,Major Damage,Police,10,1,2,3,63030,Saab
+10691,254,41,1581.27,5000000,FEMALE,PhD,handlers-cleaners,skydiving,own-child,42200,-48000,Single Vehicle Collision,Front Collision,Minor Damage,Police,8,1,2,2,63470,BMW
+10692,199,38,1281.25,0,FEMALE,High School,tech-support,movies,other-relative,0,-53100,Single Vehicle Collision,Front Collision,Major Damage,Police,6,1,0,2,44440,BMW
+10694,134,36,1497.41,0,MALE,PhD,machine-op-inspct,kayaking,husband,14100,-44500,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,17,3,2,0,77200,Ford
+10695,73,30,803.36,0,FEMALE,High School,protective-serv,reading,husband,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Other,15,3,0,0,57000,Audi
+10697,176,36,1865.83,5000000,MALE,College,transport-moving,kayaking,unmarried,32800,-50600,Single Vehicle Collision,Rear Collision,Total Loss,Police,17,1,2,1,47300,Volkswagen
+10698,145,37,1434.27,0,FEMALE,Associate,tech-support,sleeping,unmarried,0,-35900,Single Vehicle Collision,Rear Collision,Major Damage,Other,13,1,2,3,55110,Nissan
+10700,186,38,1218.56,0,FEMALE,Masters,transport-moving,video-games,husband,39300,-60300,Multi-vehicle Collision,Front Collision,Total Loss,Police,23,3,2,2,68760,Saab
+10701,85,31,1234.69,9000000,FEMALE,MD,tech-support,paintball,husband,0,0,Multi-vehicle Collision,Front Collision,Major Damage,Other,1,2,2,1,74400,BMW
+10702,162,33,964.92,0,FEMALE,Associate,exec-managerial,base-jumping,other-relative,45700,0,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,17,4,2,1,35300,Mercedes
+10704,270,41,817.28,0,MALE,High School,sales,cross-fit,unmarried,62200,0,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,17,3,1,1,60190,Mercedes
+10705,168,39,1389.59,0,FEMALE,Masters,machine-op-inspct,exercise,own-child,0,-42600,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,23,3,1,3,41580,Chevrolet
+10706,274,45,1353.53,0,FEMALE,JD,tech-support,cross-fit,unmarried,54700,-47900,Single Vehicle Collision,Side Collision,Minor Damage,Ambulance,13,1,0,0,58500,Accura
+10707,263,43,1294.04,0,FEMALE,Masters,handlers-cleaners,movies,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,17,1,2,3,79320,Nissan
+10708,152,33,840.81,0,FEMALE,High School,farming-fishing,chess,husband,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,2,1,0,2,82610,Ford
+10709,46,41,998.19,0,FEMALE,MD,priv-house-serv,video-games,husband,43700,-66300,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,23,3,1,3,78600,Dodge
+10710,276,46,1090.32,0,MALE,College,handlers-cleaners,chess,husband,0,-70400,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,17,1,1,2,51390,Volkswagen
+10711,234,44,1780.67,0,MALE,Associate,other-service,exercise,other-relative,0,0,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,3,1,1,0,70200,Ford
+10713,456,62,1395.77,0,FEMALE,MD,protective-serv,chess,own-child,82600,-49500,Multi-vehicle Collision,Side Collision,Major Damage,Other,13,3,1,3,66480,Saab
+10714,58,23,1471.44,5000000,MALE,High School,transport-moving,reading,own-child,57500,0,Single Vehicle Collision,Rear Collision,Major Damage,Fire,8,1,2,1,50380,Chevrolet
+10715,475,61,1265.72,0,FEMALE,Masters,handlers-cleaners,paintball,wife,0,-59500,Single Vehicle Collision,Front Collision,Major Damage,Fire,23,1,0,2,64350,Mercedes
+10716,96,29,1274.7,5000000,MALE,College,prof-specialty,hiking,other-relative,47500,-58700,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,15,3,2,3,55400,Chevrolet
+10717,99,28,1330.39,0,MALE,MD,prof-specialty,basketball,wife,0,0,Single Vehicle Collision,Front Collision,Total Loss,Other,3,1,2,2,49900,Dodge
+10718,38,28,1122.95,4000000,MALE,Masters,priv-house-serv,golf,other-relative,78000,0,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,4,3,0,3,74880,Accura
+10719,259,44,1655.79,0,FEMALE,Masters,exec-managerial,exercise,husband,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Other,8,1,0,0,105820,Audi
+10721,437,58,1192.04,0,MALE,Associate,craft-repair,dancing,own-child,66100,-31400,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,23,1,0,0,55800,Dodge
+10723,269,41,1422.21,0,FEMALE,Associate,handlers-cleaners,polo,unmarried,0,-46400,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,21,1,2,1,85900,Suburu
+10725,284,43,1123.84,0,MALE,PhD,prof-specialty,kayaking,other-relative,48200,0,Multi-vehicle Collision,Side Collision,Total Loss,Fire,12,3,0,0,36960,Chevrolet
+10726,189,39,838.02,0,FEMALE,College,tech-support,movies,own-child,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,7,3,2,0,64400,Dodge
+10728,39,22,1173.21,0,MALE,JD,farming-fishing,polo,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Police,14,1,0,1,86130,Suburu
+10729,140,32,985.97,5000000,FEMALE,College,protective-serv,cross-fit,other-relative,0,0,Single Vehicle Collision,Side Collision,Major Damage,Fire,13,1,2,3,82170,Chevrolet
+10730,243,41,1129.23,0,FEMALE,College,farming-fishing,camping,own-child,17300,-60400,Single Vehicle Collision,Front Collision,Major Damage,Fire,1,1,1,0,50300,Suburu
+10731,116,31,1194.83,0,FEMALE,MD,prof-specialty,camping,husband,28600,0,Single Vehicle Collision,Side Collision,Major Damage,Police,23,1,0,0,44200,Suburu
+10732,219,43,1114.29,0,FEMALE,High School,transport-moving,polo,other-relative,51300,0,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,1,1,2,2,66660,Toyota
+10733,96,26,1509.04,0,FEMALE,Associate,prof-specialty,bungie-jumping,husband,10000,0,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,9,1,2,3,78320,Saab
+10734,149,34,664.86,0,FEMALE,PhD,craft-repair,skydiving,wife,0,-60000,Single Vehicle Collision,Rear Collision,Total Loss,Fire,3,1,0,1,105040,Dodge
+10735,246,43,1267.4,6000000,MALE,JD,adm-clerical,basketball,husband,0,0,Single Vehicle Collision,Side Collision,Minor Damage,Fire,0,1,2,1,50700,Accura
+10736,293,45,1119.23,0,FEMALE,MD,exec-managerial,exercise,unmarried,51500,0,Multi-vehicle Collision,Front Collision,Total Loss,Fire,13,3,1,1,51210,Jeep
+10737,339,48,1698.51,0,MALE,JD,other-service,dancing,unmarried,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,18,3,2,1,51840,Volkswagen
+10738,160,33,1422.78,0,FEMALE,High School,exec-managerial,exercise,husband,61600,0,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,17,3,2,3,52800,Nissan
+10739,224,42,1212.75,0,FEMALE,College,prof-specialty,kayaking,own-child,0,-51400,Single Vehicle Collision,Front Collision,Minor Damage,Fire,11,1,0,0,55200,Honda
+10741,385,51,976.37,0,FEMALE,MD,craft-repair,reading,husband,0,-61000,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,14,3,1,3,67600,Suburu
+10742,100,33,1124.59,6000000,MALE,College,adm-clerical,golf,not-in-family,67300,0,Single Vehicle Collision,Rear Collision,Minor Damage,Other,4,1,1,2,40800,BMW
+10743,371,50,1569.33,0,MALE,PhD,machine-op-inspct,board-games,not-in-family,79600,0,Multi-vehicle Collision,Side Collision,Major Damage,Other,2,3,2,1,84500,Volkswagen
+10744,175,39,1359.36,5000000,MALE,PhD,exec-managerial,hiking,husband,0,-43600,Multi-vehicle Collision,Front Collision,Major Damage,Other,9,3,2,2,71610,Toyota
+10745,373,55,1607.36,0,MALE,MD,sales,yachting,own-child,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Other,21,4,0,2,60600,Dodge
+10746,258,41,1042.25,0,MALE,Masters,exec-managerial,reading,unmarried,0,-44400,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,0,3,2,3,81240,Mercedes
+10747,255,39,1453.95,0,FEMALE,PhD,armed-forces,bungie-jumping,not-in-family,38200,0,Multi-vehicle Collision,Side Collision,Total Loss,Fire,17,3,0,3,29300,Audi
+10748,37,31,1969.63,0,FEMALE,MD,sales,skydiving,own-child,0,0,Multi-vehicle Collision,Side Collision,Total Loss,Fire,21,3,1,1,76450,Dodge
+10749,322,44,1156.19,0,FEMALE,College,machine-op-inspct,cross-fit,husband,49900,-62700,Multi-vehicle Collision,Side Collision,Major Damage,Fire,20,3,0,3,49400,Jeep
+10750,204,38,1124.47,0,FEMALE,MD,tech-support,kayaking,wife,0,-45100,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,5,1,0,1,90530,Ford
+10752,193,40,1155.38,0,FEMALE,PhD,handlers-cleaners,movies,not-in-family,34200,-32300,Single Vehicle Collision,Side Collision,Minor Damage,Fire,6,1,0,0,63900,Accura
+10753,405,55,878.19,0,MALE,PhD,machine-op-inspct,golf,unmarried,57100,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,2,4,0,2,38640,Chevrolet
+10754,435,58,1145.85,0,MALE,JD,sales,movies,not-in-family,0,-40000,Multi-vehicle Collision,Rear Collision,Total Loss,Other,19,3,1,1,41490,Mercedes
+10755,54,35,1261.28,0,FEMALE,MD,protective-serv,hiking,unmarried,68500,-42100,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,21,3,2,0,79090,Nissan
+10756,144,35,1427.46,0,MALE,High School,machine-op-inspct,cross-fit,wife,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Police,3,3,0,0,87900,Dodge
+10757,92,32,1592.41,0,MALE,Masters,prof-specialty,yachting,husband,58900,-29100,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,22,1,2,3,53400,Jeep
+10758,173,36,1274.63,0,MALE,College,machine-op-inspct,basketball,unmarried,51000,0,Single Vehicle Collision,Rear Collision,Total Loss,Fire,22,1,2,3,52030,Accura
+10759,436,60,1362.31,0,MALE,High School,prof-specialty,bungie-jumping,wife,67600,-65300,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,16,1,0,2,82060,Saab
+10760,155,35,919.37,0,FEMALE,Associate,protective-serv,hiking,not-in-family,83600,0,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,0,1,0,3,48360,Nissan
+10761,78,31,1377.23,0,FEMALE,Masters,armed-forces,kayaking,unmarried,72600,0,Multi-vehicle Collision,Side Collision,Minor Damage,Other,1,3,2,1,52290,Nissan
+10762,440,57,995.55,5000000,MALE,College,protective-serv,paintball,wife,51500,-52100,Multi-vehicle Collision,Rear Collision,Major Damage,Police,19,3,0,3,68200,Jeep
+10763,264,43,1508.12,6000000,MALE,PhD,craft-repair,basketball,wife,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Other,0,3,2,1,60750,Jeep
+10764,66,30,484.67,0,FEMALE,College,adm-clerical,paintball,wife,21100,-60800,Multi-vehicle Collision,Front Collision,Major Damage,Fire,2,3,0,2,65560,Volkswagen
+10765,366,50,1561.41,0,FEMALE,High School,handlers-cleaners,basketball,husband,21200,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,5,3,1,3,70290,Mercedes
+10766,188,37,1457.21,0,FEMALE,JD,adm-clerical,hiking,own-child,46300,0,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,6,1,2,0,45000,Suburu
+10767,224,39,1128.71,0,FEMALE,JD,prof-specialty,sleeping,other-relative,0,-47100,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,21,3,2,1,61800,Suburu
+10768,253,46,1358.2,0,FEMALE,MD,transport-moving,movies,husband,52900,0,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,11,3,0,0,64570,Jeep
+10769,446,61,1232.79,0,FEMALE,High School,adm-clerical,reading,unmarried,49900,-62100,Single Vehicle Collision,Rear Collision,Minor Damage,Other,3,1,2,0,70500,Suburu
+10770,169,37,936.19,0,MALE,JD,armed-forces,movies,other-relative,70600,-48500,Multi-vehicle Collision,Side Collision,Total Loss,Police,4,3,2,1,57900,Audi
+10771,255,46,1302.34,0,FEMALE,JD,prof-specialty,video-games,own-child,0,-52600,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,2,3,1,0,57860,Volkswagen
+10772,209,39,1264.99,0,MALE,PhD,transport-moving,polo,husband,67800,0,Single Vehicle Collision,Side Collision,Minor Damage,Fire,22,1,1,1,37800,Chevrolet
+10773,210,37,1467.76,0,FEMALE,MD,tech-support,hiking,own-child,38700,-33100,Single Vehicle Collision,Front Collision,Total Loss,Ambulance,8,1,1,3,63300,Toyota
+10774,174,33,1124.43,0,FEMALE,College,farming-fishing,paintball,own-child,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,14,3,0,1,44200,Saab
+10775,70,28,1319.81,0,MALE,High School,machine-op-inspct,yachting,husband,67200,-59400,Multi-vehicle Collision,Side Collision,Minor Damage,Police,14,4,1,0,31680,Toyota
+10777,458,61,1328.18,0,FEMALE,High School,protective-serv,bungie-jumping,other-relative,53000,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,18,1,2,1,56340,Volkswagen
+10778,239,40,1463.95,0,FEMALE,JD,sales,skydiving,own-child,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Police,20,3,0,0,69740,Dodge
+10779,161,38,1133.85,0,MALE,PhD,priv-house-serv,exercise,not-in-family,60200,0,Multi-vehicle Collision,Front Collision,Total Loss,Police,0,3,2,2,60480,Volkswagen
+10780,446,61,1037.32,0,FEMALE,High School,tech-support,skydiving,wife,0,-15700,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,1,3,2,1,80880,Nissan
+10781,476,61,1562.8,0,FEMALE,Masters,handlers-cleaners,dancing,not-in-family,42800,-68200,Single Vehicle Collision,Front Collision,Total Loss,Fire,10,1,1,2,49390,Suburu
+10782,70,29,1425.79,0,FEMALE,MD,armed-forces,video-games,other-relative,62400,-52300,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,12,1,0,3,69360,Dodge
+10785,335,48,1017.97,0,FEMALE,MD,machine-op-inspct,chess,wife,59900,-34800,Multi-vehicle Collision,Front Collision,Total Loss,Police,21,3,0,0,35860,BMW
+10786,257,40,1306,0,MALE,Associate,machine-op-inspct,cross-fit,husband,46100,-46900,Multi-vehicle Collision,Front Collision,Major Damage,Ambulance,3,3,2,1,50050,Ford
+10787,85,27,1174.14,0,MALE,College,priv-house-serv,dancing,unmarried,50400,-61500,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,14,4,0,0,59070,Toyota
+10788,133,30,1231.01,0,MALE,College,adm-clerical,board-games,husband,0,-31700,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,19,3,1,2,28440,Dodge
+10789,119,34,1299.18,0,FEMALE,College,tech-support,hiking,wife,57100,0,Single Vehicle Collision,Front Collision,Major Damage,Fire,7,1,2,1,45540,Honda
+10790,169,34,1469.75,0,FEMALE,JD,sales,reading,not-in-family,0,-57600,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,0,1,0,0,38700,Volkswagen
+10792,84,32,1694.09,7000000,FEMALE,Associate,prof-specialty,cross-fit,husband,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Other,0,1,0,2,57240,BMW
+10793,169,39,1140.15,0,MALE,High School,armed-forces,exercise,husband,0,-36800,Multi-vehicle Collision,Rear Collision,Total Loss,Police,9,3,0,3,46200,Suburu
+10794,124,32,1310.71,0,FEMALE,Masters,farming-fishing,kayaking,wife,29300,0,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,23,1,0,1,57700,Toyota
+10795,320,48,1730.49,7000000,MALE,College,transport-moving,hiking,not-in-family,46300,-41700,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,13,3,2,0,56160,Saab
+10796,297,47,1616.65,7000000,MALE,MD,adm-clerical,movies,unmarried,0,-59500,Multi-vehicle Collision,Side Collision,Total Loss,Fire,0,3,0,3,44400,Jeep
+10797,421,56,1935.85,4000000,MALE,Masters,machine-op-inspct,reading,own-child,49500,-81100,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,7,1,2,3,92730,Mercedes
+10798,136,33,855.14,0,FEMALE,PhD,craft-repair,paintball,not-in-family,37900,0,Single Vehicle Collision,Side Collision,Minor Damage,Fire,23,1,0,1,30700,Toyota
+10799,46,24,1568.47,4000000,FEMALE,High School,armed-forces,yachting,unmarried,46800,0,Single Vehicle Collision,Side Collision,Major Damage,Fire,7,1,2,0,56600,Toyota
+10801,95,30,1370.92,0,MALE,College,transport-moving,video-games,unmarried,48900,0,Single Vehicle Collision,Rear Collision,Minor Damage,Police,22,1,0,3,34800,Accura
+10802,140,36,1363.59,0,FEMALE,JD,armed-forces,kayaking,not-in-family,43200,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,10,3,2,0,79500,Chevrolet
+10803,200,34,828.42,3000000,FEMALE,College,prof-specialty,basketball,other-relative,0,0,Single Vehicle Collision,Front Collision,Total Loss,Police,10,1,2,2,56000,Chevrolet
+10804,123,29,1209.63,0,FEMALE,Masters,machine-op-inspct,chess,not-in-family,64800,-44200,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,17,1,1,0,73260,Volkswagen
+10806,290,42,989.97,0,MALE,Masters,machine-op-inspct,kayaking,own-child,32500,0,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,10,1,0,1,48000,Saab
+10807,45,37,1114.23,0,MALE,College,prof-specialty,dancing,wife,0,0,Single Vehicle Collision,Side Collision,Major Damage,Fire,1,1,0,1,52200,Nissan
+10808,186,38,1347.31,0,FEMALE,JD,protective-serv,dancing,unmarried,80900,-111100,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,1,3,2,3,73800,Audi
+10809,135,34,1687.53,0,FEMALE,JD,protective-serv,base-jumping,other-relative,0,-69600,Single Vehicle Collision,Side Collision,Total Loss,Fire,7,1,1,2,78200,Audi
+10810,110,33,1183.48,0,MALE,Associate,other-service,bungie-jumping,husband,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,19,1,2,3,55200,Saab
+10811,259,43,1537.13,0,FEMALE,PhD,handlers-cleaners,kayaking,own-child,0,-58300,Multi-vehicle Collision,Side Collision,Total Loss,Other,3,3,0,2,57060,Ford
+10813,404,56,1361.16,4000000,FEMALE,Masters,transport-moving,cross-fit,not-in-family,0,-63700,Single Vehicle Collision,Front Collision,Minor Damage,Ambulance,23,1,2,0,53100,Accura
+10815,57,25,1143.06,0,FEMALE,Masters,tech-support,dancing,own-child,63100,-54100,Multi-vehicle Collision,Front Collision,Total Loss,Ambulance,0,3,0,1,72900,Nissan
+10816,215,38,1405.71,0,FEMALE,PhD,craft-repair,camping,unmarried,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Police,10,1,0,1,70700,Volkswagen
+10817,140,30,1354.2,0,FEMALE,College,adm-clerical,bungie-jumping,wife,100500,0,Multi-vehicle Collision,Side Collision,Minor Damage,Other,4,4,0,0,60170,Nissan
+10818,250,42,1055.6,0,MALE,High School,exec-managerial,paintball,husband,69500,-40700,Single Vehicle Collision,Rear Collision,Major Damage,Other,16,1,1,1,74800,Ford
+10820,356,47,1155.97,0,MALE,High School,prof-specialty,camping,husband,0,0,Single Vehicle Collision,Side Collision,Minor Damage,Other,5,1,0,3,61490,Dodge
+10822,187,34,1232.57,0,FEMALE,PhD,machine-op-inspct,polo,not-in-family,59500,0,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,7,3,0,0,45100,Nissan
+10823,386,53,1078.65,0,MALE,JD,craft-repair,camping,not-in-family,36800,0,Single Vehicle Collision,Front Collision,Minor Damage,Police,16,1,2,3,66660,Honda
+10824,197,41,1324.78,0,FEMALE,PhD,prof-specialty,basketball,not-in-family,0,-64500,Single Vehicle Collision,Front Collision,Major Damage,Police,6,1,2,2,76400,Volkswagen
+10825,166,37,1518.54,0,FEMALE,MD,craft-repair,kayaking,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Ambulance,10,1,1,1,58300,Ford
+10826,293,49,1239.06,0,FEMALE,JD,transport-moving,skydiving,husband,34900,0,Single Vehicle Collision,Front Collision,Total Loss,Police,19,1,1,1,57310,Volkswagen
+10827,179,32,1246.68,0,FEMALE,PhD,priv-house-serv,movies,own-child,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,10,1,0,1,53100,Suburu
+10828,76,24,1622.67,0,FEMALE,MD,priv-house-serv,paintball,husband,0,0,Multi-vehicle Collision,Side Collision,Total Loss,Ambulance,6,3,1,1,74700,Suburu
+10829,105,28,1082.36,0,FEMALE,Associate,prof-specialty,golf,own-child,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,12,3,2,2,60500,Audi
+10830,97,26,1270.55,0,MALE,Masters,protective-serv,chess,unmarried,0,-72100,Multi-vehicle Collision,Side Collision,Total Loss,Other,10,3,2,3,84920,Jeep
+10831,148,36,1236.32,5000000,FEMALE,MD,adm-clerical,hiking,own-child,55100,0,Single Vehicle Collision,Side Collision,Total Loss,Police,0,1,2,0,61050,Dodge
+10832,77,26,785.82,0,MALE,JD,exec-managerial,movies,other-relative,49700,0,Multi-vehicle Collision,Rear Collision,Major Damage,Police,12,3,2,0,69080,Audi
+10834,126,28,1508.9,0,FEMALE,JD,machine-op-inspct,skydiving,other-relative,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Police,3,4,0,1,67800,Ford
+10837,257,43,974.84,0,FEMALE,JD,transport-moving,kayaking,other-relative,52100,0,Single Vehicle Collision,Rear Collision,Total Loss,Police,0,1,0,1,85320,Nissan
+10839,185,34,1257.36,0,FEMALE,PhD,armed-forces,movies,husband,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Fire,20,3,1,1,51370,BMW
+10840,234,43,1257.04,0,MALE,Associate,protective-serv,reading,own-child,0,-48800,Single Vehicle Collision,Rear Collision,Major Damage,Police,4,1,2,2,51600,Dodge
+10842,233,39,1524.18,0,MALE,JD,craft-repair,reading,unmarried,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Fire,20,3,1,0,48870,Saab
+10844,297,48,1243.68,0,MALE,Masters,protective-serv,camping,wife,0,-71400,Multi-vehicle Collision,Front Collision,Major Damage,Other,18,3,0,2,54960,Toyota
+10845,273,47,1189.04,0,FEMALE,Associate,prof-specialty,video-games,own-child,59600,0,Multi-vehicle Collision,Side Collision,Minor Damage,Police,0,3,1,3,39800,Jeep
+10846,147,37,1375.29,0,FEMALE,Masters,armed-forces,chess,own-child,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,11,3,0,1,56160,Ford
+10847,285,42,1389.13,0,MALE,Associate,priv-house-serv,golf,not-in-family,63100,-79400,Single Vehicle Collision,Side Collision,Total Loss,Fire,13,1,0,3,52700,Toyota
+10848,289,43,1387.51,0,FEMALE,Associate,sales,base-jumping,not-in-family,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,19,3,1,3,68580,Jeep
+10849,427,60,1178.61,7000000,MALE,MD,craft-repair,board-games,own-child,0,-54400,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,23,1,1,2,90860,Volkswagen
+10851,13,21,1556.31,0,MALE,Associate,prof-specialty,golf,not-in-family,0,-75000,Multi-vehicle Collision,Side Collision,Total Loss,Police,19,3,2,0,94930,Accura
+10852,282,43,1452.27,0,MALE,MD,farming-fishing,video-games,not-in-family,75800,0,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,19,1,1,2,46800,Audi
+10853,312,47,1212.07,0,FEMALE,MD,exec-managerial,polo,wife,66900,-51800,Multi-vehicle Collision,Side Collision,Total Loss,Fire,17,3,2,3,56320,Mercedes
+10854,266,46,1578.54,0,MALE,Associate,handlers-cleaners,chess,husband,0,-41400,Single Vehicle Collision,Front Collision,Minor Damage,Fire,18,1,1,3,83490,Nissan
+10855,30,36,1488.26,0,FEMALE,College,machine-op-inspct,golf,wife,0,-63500,Multi-vehicle Collision,Side Collision,Total Loss,Police,17,3,2,2,57900,Saab
+10856,198,36,1096.39,0,MALE,High School,armed-forces,kayaking,own-child,0,0,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,11,3,1,3,49410,Audi
+10857,290,45,1215.36,0,MALE,Associate,tech-support,reading,own-child,54400,0,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,22,3,0,1,66200,Suburu
+10858,260,46,1482.57,0,MALE,MD,priv-house-serv,reading,husband,35000,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,7,1,0,1,64080,Toyota
+10859,233,43,954.18,0,FEMALE,College,tech-support,dancing,other-relative,0,0,Multi-vehicle Collision,Side Collision,Minor Damage,Other,17,3,2,3,42500,Nissan
+10860,130,30,1193.4,0,MALE,PhD,exec-managerial,bungie-jumping,own-child,0,-40800,Multi-vehicle Collision,Side Collision,Total Loss,Other,16,3,2,3,48950,Suburu
+10861,230,42,1023.11,0,FEMALE,MD,adm-clerical,golf,own-child,0,-45300,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,13,3,1,2,58850,Accura
+10862,212,40,1524.45,0,FEMALE,Masters,other-service,golf,husband,73200,0,Multi-vehicle Collision,Side Collision,Minor Damage,Other,17,3,0,2,82400,Nissan
+10863,299,44,1653.32,0,FEMALE,College,other-service,bungie-jumping,other-relative,0,-48800,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,3,1,2,0,54240,Suburu
+10864,91,26,1022.46,0,FEMALE,Associate,armed-forces,video-games,other-relative,52700,0,Multi-vehicle Collision,Front Collision,Minor Damage,Other,15,3,0,2,74200,Jeep
+10865,398,53,1396.43,0,FEMALE,Associate,priv-house-serv,base-jumping,unmarried,21500,0,Single Vehicle Collision,Front Collision,Total Loss,Fire,16,1,2,1,47430,Toyota
+10866,218,43,1521.55,0,FEMALE,Associate,priv-house-serv,polo,other-relative,61100,-64500,Single Vehicle Collision,Rear Collision,Major Damage,Fire,18,1,1,3,68200,Dodge
+10867,152,33,1034.27,0,FEMALE,JD,armed-forces,exercise,husband,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,18,1,1,0,63900,Accura
+10868,212,39,1255.35,0,FEMALE,JD,protective-serv,skydiving,not-in-family,60300,-58900,Multi-vehicle Collision,Rear Collision,Total Loss,Ambulance,22,2,0,3,59300,Dodge
+10869,242,44,1396.89,6000000,FEMALE,College,priv-house-serv,chess,other-relative,0,-61600,Multi-vehicle Collision,Front Collision,Minor Damage,Other,15,3,1,2,66900,Suburu
+10870,80,27,795.31,0,MALE,JD,farming-fishing,skydiving,husband,0,-51000,Multi-vehicle Collision,Rear Collision,Major Damage,Police,16,3,1,3,40810,Ford
+10871,260,43,982.22,0,FEMALE,JD,exec-managerial,skydiving,not-in-family,54500,-72100,Single Vehicle Collision,Front Collision,Total Loss,Fire,18,1,1,0,75400,Honda
+10873,290,45,1311.3,0,FEMALE,Associate,machine-op-inspct,chess,wife,38500,0,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,23,3,0,0,52650,Ford
+10874,322,49,1277.12,0,FEMALE,PhD,armed-forces,kayaking,own-child,0,-46000,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,18,1,0,2,42240,Chevrolet
+10875,228,39,1388.62,0,FEMALE,JD,sales,reading,husband,35200,0,Single Vehicle Collision,Side Collision,Minor Damage,Other,10,1,1,0,59490,Mercedes
+10876,195,37,1406.52,8000000,MALE,MD,tech-support,base-jumping,unmarried,0,0,Single Vehicle Collision,Side Collision,Major Damage,Ambulance,12,1,0,2,44200,Jeep
+10878,405,57,1132.47,4000000,MALE,MD,priv-house-serv,exercise,other-relative,46300,0,Multi-vehicle Collision,Front Collision,Total Loss,Other,21,3,2,3,61440,Saab
+10879,144,37,1896.91,0,FEMALE,PhD,handlers-cleaners,sleeping,not-in-family,73700,0,Multi-vehicle Collision,Rear Collision,Major Damage,Fire,17,3,1,3,54400,Chevrolet
+10880,338,47,1143.46,4000000,MALE,MD,priv-house-serv,polo,other-relative,0,0,Single Vehicle Collision,Front Collision,Total Loss,Other,4,1,2,1,58560,Mercedes
+10881,121,34,1285.42,0,MALE,MD,priv-house-serv,video-games,wife,0,0,Single Vehicle Collision,Front Collision,Major Damage,Fire,11,1,1,1,67300,Dodge
+10882,398,55,1305.26,0,MALE,MD,farming-fishing,skydiving,wife,66200,-49700,Single Vehicle Collision,Rear Collision,Major Damage,Fire,18,1,1,3,36740,BMW
+10883,9,30,1073.83,0,FEMALE,High School,machine-op-inspct,dancing,not-in-family,0,0,Single Vehicle Collision,Rear Collision,Total Loss,Police,12,1,0,0,85690,BMW
+10884,115,31,1051.67,0,FEMALE,Associate,exec-managerial,bungie-jumping,not-in-family,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,18,3,0,3,34160,Audi
+10885,280,48,1387.35,0,MALE,JD,transport-moving,paintball,not-in-family,0,-72000,Single Vehicle Collision,Front Collision,Minor Damage,Fire,16,1,2,2,61320,BMW
+10886,254,45,1083.64,0,MALE,JD,other-service,paintball,husband,59800,0,Multi-vehicle Collision,Rear Collision,Total Loss,Police,19,3,0,0,79680,BMW
+10887,141,30,1851.78,0,FEMALE,High School,craft-repair,exercise,other-relative,78800,0,Single Vehicle Collision,Front Collision,Total Loss,Fire,13,1,1,0,61740,Audi
+10889,381,55,1459.99,0,FEMALE,MD,other-service,chess,wife,35900,0,Single Vehicle Collision,Rear Collision,Major Damage,Fire,8,1,1,2,60600,Accura
+10890,191,38,1253.44,0,FEMALE,Masters,craft-repair,sleeping,not-in-family,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,19,3,2,0,56320,Volkswagen
+10891,145,34,1142.48,0,FEMALE,JD,priv-house-serv,sleeping,other-relative,0,0,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,18,1,2,0,52250,Suburu
+10892,479,60,1188.45,0,FEMALE,MD,exec-managerial,camping,other-relative,0,-44800,Multi-vehicle Collision,Rear Collision,Total Loss,Other,9,2,0,3,53900,Saab
+10896,156,38,1367.99,0,MALE,High School,armed-forces,board-games,own-child,26500,0,Multi-vehicle Collision,Front Collision,Major Damage,Fire,23,3,0,3,55200,Saab
+10898,178,39,1035.99,0,FEMALE,JD,exec-managerial,sleeping,own-child,0,0,Multi-vehicle Collision,Front Collision,Minor Damage,Police,3,3,2,0,64680,Jeep
+10899,237,43,911.53,0,FEMALE,PhD,sales,basketball,husband,53200,0,Single Vehicle Collision,Rear Collision,Major Damage,Police,23,1,0,1,59200,Chevrolet
+10901,1,33,1391.63,0,MALE,Associate,sales,video-games,husband,61200,0,Single Vehicle Collision,Side Collision,Total Loss,Other,23,1,0,3,69400,Mercedes
+10902,5,21,915.41,5000000,FEMALE,High School,exec-managerial,sleeping,own-child,0,0,Single Vehicle Collision,Side Collision,Total Loss,Police,23,1,0,0,40500,Nissan
+10903,64,28,1468.82,0,MALE,JD,handlers-cleaners,skydiving,other-relative,56800,-51800,Multi-vehicle Collision,Side Collision,Minor Damage,Fire,9,3,2,1,60000,Honda
+10904,142,30,1412.76,0,MALE,PhD,armed-forces,basketball,wife,66400,-63700,Single Vehicle Collision,Side Collision,Minor Damage,Other,22,1,2,3,67320,Volkswagen
+10905,97,27,1588.26,0,FEMALE,High School,tech-support,movies,husband,56700,-49300,Multi-vehicle Collision,Side Collision,Total Loss,Other,22,3,2,1,75690,Saab
+10906,121,31,1140.91,0,MALE,Associate,adm-clerical,paintball,other-relative,51300,0,Multi-vehicle Collision,Side Collision,Major Damage,Fire,15,3,1,2,64300,Chevrolet
+10907,225,43,1517.54,0,MALE,JD,priv-house-serv,camping,own-child,0,-20900,Multi-vehicle Collision,Rear Collision,Major Damage,Police,16,3,2,0,64400,BMW
+10908,425,53,912.29,0,FEMALE,High School,priv-house-serv,paintball,husband,42900,-39100,Multi-vehicle Collision,Front Collision,Minor Damage,Fire,17,3,1,2,97080,Saab
+10910,192,38,1281.43,0,FEMALE,Masters,transport-moving,skydiving,not-in-family,65100,-50300,Multi-vehicle Collision,Rear Collision,Total Loss,Other,10,3,0,2,30700,Jeep
+10911,285,48,1101.85,0,FEMALE,College,sales,dancing,wife,46100,0,Single Vehicle Collision,Side Collision,Minor Damage,Police,9,1,1,2,33480,Nissan
+10912,98,26,1082.1,0,MALE,JD,exec-managerial,kayaking,other-relative,0,-30900,Multi-vehicle Collision,Front Collision,Total Loss,Police,13,2,0,1,65430,Jeep
+10913,175,36,1185.44,0,MALE,Masters,exec-managerial,kayaking,not-in-family,44900,-52500,Multi-vehicle Collision,Rear Collision,Major Damage,Police,15,3,2,1,42680,Accura
+10914,259,45,1175.07,0,MALE,MD,craft-repair,movies,not-in-family,30100,0,Single Vehicle Collision,Side Collision,Minor Damage,Fire,23,1,1,1,87780,Honda
+10915,140,36,979.26,0,FEMALE,JD,transport-moving,cross-fit,own-child,0,-67000,Multi-vehicle Collision,Front Collision,Major Damage,Fire,2,4,0,2,72800,Honda
+10916,231,37,920.81,0,FEMALE,High School,sales,chess,wife,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Fire,14,1,2,0,71190,Mercedes
+10918,229,41,1107.59,3000000,MALE,PhD,tech-support,chess,not-in-family,65400,0,Single Vehicle Collision,Side Collision,Major Damage,Other,23,1,1,3,62640,Mercedes
+10919,180,36,1272.46,0,MALE,College,prof-specialty,exercise,wife,0,0,Multi-vehicle Collision,Front Collision,Minor Damage,Ambulance,7,3,2,1,69630,Toyota
+10920,188,33,1340.24,0,MALE,High School,protective-serv,chess,own-child,0,-68800,Multi-vehicle Collision,Rear Collision,Minor Damage,Police,8,3,1,0,76010,Dodge
+10921,214,40,1648,0,MALE,JD,transport-moving,base-jumping,not-in-family,57700,-43500,Single Vehicle Collision,Rear Collision,Total Loss,Other,17,1,1,0,44220,Accura
+10922,178,38,1381.14,0,FEMALE,College,other-service,camping,wife,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,10,3,0,3,57200,BMW
+10924,90,31,951.27,0,FEMALE,PhD,other-service,hiking,not-in-family,42100,0,Single Vehicle Collision,Rear Collision,Total Loss,Other,2,1,1,0,75790,Accura
+10925,135,30,1341.24,0,FEMALE,MD,farming-fishing,skydiving,wife,37100,-46500,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,18,3,0,1,32670,Honda
+10927,211,38,1055.09,0,FEMALE,Masters,transport-moving,video-games,own-child,0,0,Single Vehicle Collision,Front Collision,Total Loss,Fire,12,1,0,3,91520,BMW
+10928,156,32,1479.48,0,MALE,Masters,prof-specialty,bungie-jumping,unmarried,0,0,Single Vehicle Collision,Front Collision,Major Damage,Other,15,1,1,3,74690,Dodge
+10930,136,32,1169.62,0,FEMALE,JD,sales,yachting,not-in-family,0,0,Single Vehicle Collision,Side Collision,Major Damage,Police,6,1,0,0,55000,Toyota
+10931,310,48,1516.34,0,FEMALE,JD,adm-clerical,sleeping,unmarried,11000,0,Multi-vehicle Collision,Rear Collision,Major Damage,Police,11,4,0,2,59400,Saab
+10932,123,34,1270.21,0,FEMALE,College,sales,sleeping,husband,16100,-61200,Multi-vehicle Collision,Side Collision,Total Loss,Fire,13,3,1,1,55260,Nissan
+10933,243,44,809.11,0,MALE,JD,craft-repair,polo,other-relative,33200,0,Multi-vehicle Collision,Side Collision,Minor Damage,Other,4,3,2,1,51400,Honda
+10934,36,37,1115.81,0,FEMALE,Masters,machine-op-inspct,reading,husband,0,-59800,Multi-vehicle Collision,Side Collision,Minor Damage,Ambulance,20,3,1,3,48780,Dodge
+10935,146,31,1457.65,5000000,FEMALE,College,armed-forces,camping,own-child,0,0,Multi-vehicle Collision,Rear Collision,Major Damage,Ambulance,0,3,1,3,52380,Toyota
+10936,154,34,1041.36,0,FEMALE,JD,priv-house-serv,cross-fit,husband,53100,-43900,Multi-vehicle Collision,Side Collision,Total Loss,Other,18,4,2,3,74360,Toyota
+10937,204,40,1693.83,7000000,MALE,High School,protective-serv,polo,other-relative,44000,-20800,Single Vehicle Collision,Front Collision,Minor Damage,Police,6,1,1,0,53400,Honda
+10938,458,59,1685.69,0,FEMALE,High School,protective-serv,hiking,wife,31400,0,Single Vehicle Collision,Front Collision,Total Loss,Police,23,1,2,2,71800,Jeep
+10939,147,31,1054.92,6000000,FEMALE,PhD,prof-specialty,exercise,own-child,51900,0,Single Vehicle Collision,Front Collision,Major Damage,Other,4,1,0,0,68240,Toyota
+10940,279,45,1333.97,6000000,FEMALE,MD,other-service,bungie-jumping,unmarried,61100,-30700,Multi-vehicle Collision,Rear Collision,Major Damage,Other,21,3,1,0,61050,Dodge
+10942,284,48,958.3,0,FEMALE,PhD,machine-op-inspct,exercise,husband,47900,0,Multi-vehicle Collision,Side Collision,Major Damage,Fire,19,3,0,0,46860,Volkswagen
+10944,421,57,1206.26,0,FEMALE,Associate,armed-forces,bungie-jumping,own-child,69900,0,Multi-vehicle Collision,Front Collision,Minor Damage,Police,22,3,0,0,78500,Audi
+10945,266,42,763.67,0,MALE,Associate,prof-specialty,movies,own-child,12800,-49700,Single Vehicle Collision,Side Collision,Total Loss,Police,12,1,1,3,70830,Jeep
+10946,412,56,1042.56,0,MALE,High School,handlers-cleaners,yachting,own-child,0,-66100,Multi-vehicle Collision,Front Collision,Total Loss,Police,19,3,0,2,68040,Suburu
+10947,31,32,1263.48,4000000,FEMALE,JD,other-service,hiking,wife,46800,-87300,Single Vehicle Collision,Side Collision,Major Damage,Fire,10,1,2,0,63600,Audi
+10948,465,63,1006.99,6000000,FEMALE,Masters,sales,board-games,own-child,0,0,Single Vehicle Collision,Side Collision,Minor Damage,Other,7,1,0,3,43560,Suburu
+10949,126,31,1328.26,0,MALE,Masters,sales,exercise,not-in-family,42300,-45800,Single Vehicle Collision,Front Collision,Total Loss,Police,17,1,1,1,60840,Suburu
+10950,407,55,1250.08,5000000,FEMALE,PhD,tech-support,bungie-jumping,wife,0,-57700,Multi-vehicle Collision,Side Collision,Total Loss,Police,0,3,2,3,68160,Ford
+10952,187,37,1412.06,5000000,FEMALE,Masters,protective-serv,reading,not-in-family,60100,0,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,21,1,0,3,57700,Nissan
+10953,252,46,1066.7,0,FEMALE,JD,handlers-cleaners,sleeping,own-child,0,0,Multi-vehicle Collision,Front Collision,Total Loss,Other,22,3,0,2,89520,Audi
+10955,246,39,1416.08,0,FEMALE,JD,craft-repair,yachting,other-relative,0,-36600,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,16,1,0,3,45180,Honda
+10956,190,38,1246.03,0,MALE,JD,craft-repair,movies,unmarried,61900,-50000,Single Vehicle Collision,Side Collision,Total Loss,Other,14,1,0,0,45100,Nissan
+10957,95,32,1356.64,0,MALE,Masters,machine-op-inspct,golf,not-in-family,67800,-48600,Multi-vehicle Collision,Side Collision,Total Loss,Police,21,3,0,3,83160,Toyota
+10958,205,42,1387.7,4000000,FEMALE,High School,priv-house-serv,skydiving,other-relative,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Police,19,1,2,1,86130,Chevrolet
+10959,41,25,1004.14,0,MALE,Masters,priv-house-serv,sleeping,wife,35400,0,Multi-vehicle Collision,Front Collision,Major Damage,Fire,13,3,1,3,48000,Dodge
+10961,194,34,1429.96,0,FEMALE,JD,protective-serv,board-games,husband,67800,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Ambulance,11,3,1,2,57200,Toyota
+10963,150,37,1007,0,FEMALE,PhD,transport-moving,board-games,unmarried,30400,-89400,Single Vehicle Collision,Rear Collision,Total Loss,Police,9,1,0,2,80080,Chevrolet
+10966,80,26,1343,0,MALE,Masters,handlers-cleaners,camping,other-relative,64600,0,Single Vehicle Collision,Front Collision,Minor Damage,Other,12,1,0,0,90400,BMW
+10967,65,29,1441.6,5000000,FEMALE,MD,sales,kayaking,own-child,0,0,Multi-vehicle Collision,Rear Collision,Minor Damage,Other,21,3,0,0,62900,Jeep
+10968,179,32,1433.42,6000000,FEMALE,Associate,protective-serv,base-jumping,own-child,53800,0,Single Vehicle Collision,Rear Collision,Major Damage,Police,4,1,1,2,54200,Nissan
+10969,372,50,1368.57,0,FEMALE,MD,tech-support,paintball,other-relative,0,0,Multi-vehicle Collision,Side Collision,Major Damage,Police,18,3,2,2,51800,Accura
+10971,213,35,871.46,0,MALE,MD,tech-support,movies,husband,58500,-77700,Single Vehicle Collision,Side Collision,Total Loss,Fire,13,1,2,0,74140,Ford
+10972,79,25,1863.04,0,FEMALE,Associate,priv-house-serv,paintball,not-in-family,53400,-35200,Single Vehicle Collision,Front Collision,Total Loss,Fire,0,1,2,1,67800,Mercedes
+10973,232,44,1181.64,0,MALE,College,other-service,exercise,wife,25800,0,Single Vehicle Collision,Rear Collision,Major Damage,Fire,22,1,1,1,55400,Jeep
+10974,230,37,1060.74,0,MALE,PhD,tech-support,reading,own-child,0,-51500,Single Vehicle Collision,Rear Collision,Major Damage,Ambulance,15,1,2,3,49100,Suburu
+10975,234,41,951.56,0,FEMALE,JD,transport-moving,video-games,wife,59400,-78600,Multi-vehicle Collision,Side Collision,Major Damage,Police,3,3,2,1,98280,Chevrolet
+10976,240,40,1533.71,9000000,FEMALE,JD,protective-serv,polo,own-child,0,-70900,Multi-vehicle Collision,Rear Collision,Total Loss,Fire,18,2,0,2,66550,Ford
+10977,143,33,1200.09,0,FEMALE,Associate,craft-repair,board-games,unmarried,38400,-5700,Multi-vehicle Collision,Side Collision,Major Damage,Fire,17,3,2,2,70400,Accura
+10978,266,42,1093.83,4000000,MALE,Associate,adm-clerical,board-games,other-relative,0,-49600,Multi-vehicle Collision,Side Collision,Major Damage,Ambulance,18,3,1,1,53280,Suburu
+10979,89,32,988.93,0,FEMALE,High School,craft-repair,golf,unmarried,27600,0,Single Vehicle Collision,Front Collision,Total Loss,Other,11,1,2,3,84590,Dodge
+10980,229,37,1331.94,0,FEMALE,Masters,farming-fishing,base-jumping,not-in-family,0,-55400,Single Vehicle Collision,Rear Collision,Total Loss,Other,17,1,0,2,54560,Saab
+10981,245,40,1361.45,0,MALE,PhD,handlers-cleaners,camping,unmarried,39300,0,Single Vehicle Collision,Rear Collision,Minor Damage,Ambulance,12,1,0,2,82170,Suburu
+10982,50,44,1188.51,0,MALE,College,handlers-cleaners,bungie-jumping,unmarried,0,-65800,Multi-vehicle Collision,Front Collision,Total Loss,Police,15,3,1,2,61100,Dodge
+10983,230,43,1101.83,0,MALE,High School,exec-managerial,cross-fit,other-relative,28900,0,Multi-vehicle Collision,Front Collision,Minor Damage,Police,0,3,0,3,51900,BMW
+10985,163,36,1503.21,0,MALE,MD,other-service,cross-fit,husband,55700,-49900,Single Vehicle Collision,Side Collision,Total Loss,Ambulance,1,1,2,1,51390,Toyota
+10986,29,32,1722.5,0,MALE,High School,other-service,base-jumping,wife,0,-21500,Single Vehicle Collision,Side Collision,Major Damage,Other,22,1,0,2,76900,Jeep
+10987,232,42,944.03,0,MALE,College,handlers-cleaners,kayaking,not-in-family,0,-58400,Single Vehicle Collision,Rear Collision,Minor Damage,Other,11,1,2,3,77000,Toyota
+10988,235,39,1453.61,4000000,MALE,JD,craft-repair,yachting,other-relative,0,0,Single Vehicle Collision,Side Collision,Major Damage,Other,10,1,0,3,60320,Chevrolet
+10989,295,46,1672.88,0,FEMALE,High School,armed-forces,dancing,wife,0,0,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,5,1,1,1,60700,Honda
+10990,22,21,1248.05,0,FEMALE,High School,exec-managerial,movies,husband,37500,-54000,Multi-vehicle Collision,Rear Collision,Total Loss,Police,3,3,1,2,53280,Chevrolet
+10991,286,43,1564.43,3000000,FEMALE,MD,prof-specialty,movies,unmarried,77500,-32800,Single Vehicle Collision,Rear Collision,Minor Damage,Fire,18,1,2,2,34290,Jeep
+10992,257,44,1280.88,0,MALE,MD,other-service,basketball,other-relative,59400,-32200,Single Vehicle Collision,Rear Collision,Total Loss,Other,21,1,0,1,46980,Accura
+10993,94,26,722.66,0,MALE,MD,exec-managerial,camping,husband,50300,0,Multi-vehicle Collision,Front Collision,Major Damage,Fire,6,3,1,2,36700,Nissan
+10994,124,28,1235.14,0,MALE,MD,exec-managerial,camping,husband,0,-32100,Multi-vehicle Collision,Side Collision,Total Loss,Other,20,3,0,1,60200,Volkswagen
+10996,3,38,1310.8,0,FEMALE,Masters,craft-repair,paintball,unmarried,0,0,Single Vehicle Collision,Front Collision,Minor Damage,Fire,20,1,0,1,87200,Honda
+10997,285,41,1436.79,0,FEMALE,PhD,prof-specialty,sleeping,wife,70900,0,Single Vehicle Collision,Rear Collision,Major Damage,Fire,23,1,2,3,108480,Volkswagen
+10998,130,34,1383.49,3000000,FEMALE,Masters,armed-forces,bungie-jumping,other-relative,35100,0,Multi-vehicle Collision,Side Collision,Minor Damage,Police,4,3,2,3,67500,Suburu
+10999,458,62,1356.92,5000000,MALE,Associate,handlers-cleaners,base-jumping,wife,0,0,Single Vehicle Collision,Rear Collision,Major Damage,Other,2,1,0,1,46980,Audi

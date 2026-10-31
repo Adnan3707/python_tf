@@ -3,3 +3,5 @@ venv
 /pizza_steak
 /multi_class/10_food_classes_all_data
 /TransferLearning/10_food_classes_10_percent
+/TransferLearning_fineTuneing/10_food_classes_1_percent
+/TransferLearning_fineTuneing/all data/10_food_classes_all_data
